@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look eSports</title>
+    <link rel="shortcut icon" href="images/favicon1.png">
+    <link rel="stylesheet" href="css/schedule.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--jQuery-->
+    <!--jQuery 소스삽입  cdnjs 플러그인 사용 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <!--jQuery-ui 소스삽입 (aniamtion 기능, 다양한 ui component)  cdnjs 플러그인 사용 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="js/sub01.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="h-top-container">
+            <div class="inner">
+                <h1 class="logo" lang="en"><a href="#" title="홈으로 이동"><span>Look</span><span> eSports</span></a></h1>
+                <div class="h-top-right">
+                    <div class="text-wrap">
+                        <a href="#" class="log-in"><strong>로그인</strong></a>
+                        <a href="#" class="join"><strong>회원가입</strong></a>
+                        <a href="#" class="res-check"><strong>예약확인/취소</strong></a>
+                        <div class="lang-box">
+                            <a href="#" class="lang_ko" lang="en" title="한국어"><strong>KOR</strong>
+                                <i class='bx bxs-down-arrow'></i>
+                            </a>
+                            <div class="lang-box_en">
+                                <a href="#" class="lang_en" lang="en" title="영어"><strong>ENG</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <button class="all-menu-btn">
+                            <span class="blind">메뉴창 열기</span>
+                            <i class='bx bx-menu'></i>
+                        </button>
+                        <button class="all-menu-close">
+                            <span class="blind">메뉴창 닫기</span>
+                            <i class='bx bx-x'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="all-menu-wrap">
+                <div class="all-menu-top">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                </div>
+                <ul class="mo-menu-list">
+                    <li><a href="#">티켓 예매</a></li>
+                    <li><a href="#"><span>일정 및 순위</span><i class='bx bx-plus'></i><i class='bx bx-minus'></i></a>
+                        <ul class="mo-submenu-list">
+                            <li><a href="#">일정/결과</a></li>
+                            <li><a href="#">리그 순위</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>구단 소개</span><i class='bx bx-plus'></i><i class='bx bx-minus'></i></a>
+                        <ul class="mo-submenu-list" lang="en">
+                            <li><a href="#">LEAGUE OF LEGEND</a></li>
+                            <li><a href="#">PUBG</a></li>
+                            <li><a href="#">VALORANT</a></li>
+                            <li><a href="#">OVERWATCH</a></li>
+                            <li><a href="#">KARTRIDER</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">경기장 정보</a></li>
+                    <li><a href="#"><span>승부예측</span><i class='bx bx-plus'></i><i class='bx bx-minus'></i></a>
+                        <ul class="mo-submenu-list" lang="en">
+                            <li><a href="#">LEAGUE OF LEGEND</a></li>
+                            <li><a href="#">STARCRAFT</a></li>
+                            <li><a href="#">PUBG</a></li>
+                            <li><a href="#">VALORANT</a></li>
+                            <li><a href="#">OVERWATCH</a></li>
+                            <li><a href="#">KARTRIDER</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>고객지원</span><i class='bx bx-plus'></i><i class='bx bx-minus'></i></a>
+                        <ul class="mo-submenu-list">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#" lang="en">FAQ</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="h-bottom-container">
+            <div class="inner">
+                <ul class="gnb-list">
+                    <li><a href="#">티켓 예매</a></li>
+                    <li><a href="#" style="color:#E3002B">일정 및 순위</a>
+                        <ul class="submenu-list">
+                            <li><a href="#">일정/결과</a></li>
+                            <li><a href="#">리그 순위</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">구단 소개</a>
+                        <ul class="submenu-list" lang="en">
+                            <li><a href="#">LEAGUE OF LEGEND</a></li>
+                            <li><a href="#">PUBG</a></li>
+                            <li><a href="#">VALORANT</a></li>
+                            <li><a href="#">OVERWATCH</a></li>
+                            <li><a href="#">KARTRIDER</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">경기장 정보</a></li>
+                    <li><a href="#">승부예측</a>
+                        <ul class="submenu-list" lang="en">
+                            <li><a href="#">LEAGUE OF LEGEND</a></li>
+                            <li><a href="#">STARCRAFT</a></li>
+                            <li><a href="#">PUBG</a></li>
+                            <li><a href="#">VALORANT</a></li>
+                            <li><a href="#">OVERWATCH</a></li>
+                            <li><a href="#">KARTRIDER</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객지원</a>
+                        <ul class="submenu-list">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#" lang="en">FAQ</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="search-box">
+                    <input type="text" placeholder="검색어를 입력하세요" title="검색어를 입력하세요">
+                    <button class="search-btn">
+                        <span class="blind">검색 버튼</span>
+                        <i class='bx bx-search'></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main class="sub01">
+        <div class="inner">
+            <div class="select-box">
+                <div class="large-scale">
+                    <a href="#">일정/결과</a>
+                    <a href="#">리그 순위</a>
+                </div>
+                <div class="middle-scale">
+                    <a href="#">ALL</a>
+                    <a href="#">KARTRIDER</a>
+                    <a href="#">LOL</a>
+                    <a href="#">OVERWATCH</a>
+                    <a href="#">PUBG</a>
+                    <a href="#">STARCRAFT</a>
+                    <a href="#">VALORANT</a>
+                </div>
+                <div class="small-scale">
+                    <div class="game-box kart-box">
+                        <a href="#">
+                            <figure>
+                                <img src="images/kartriderleague_KRPL_meta.jpg" alt="카트라이더 러쉬 플러스">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">KRLP</p>
+                            </figcaption>
+                        </a>
+                    </div>
+                    <div class="game-box lol-box">
+                        <a href="#">
+                            <figure>
+                                <img src="images/lck_b.png" alt="리그오브레전드 챔피언스 리그">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">LCK</p>
+                            </figcaption>
+                        </a>
+                        <a href="#">
+                            <figure>
+                                <img src="images/lck_cl.png" alt="리그오브레전드 챌린저스 리그">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">LCK CL</p>
+                            </figcaption>
+                        </a>
+                        <a href="#">
+                            <figure>
+                                <img src="images/msi.png" alt="리그오브레전드 미드 시즌 인비테이셔널">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">MSI</p>
+                            </figcaption>
+                        </a>
+                        <a href="#">
+                            <figure>
+                                <img src="images/lol_chams.png" alt="리그오브레전드 월드 챔피언십">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">WORLDS</p>
+                            </figcaption>
+                        </a>
+                    </div>
+                    <div class="game-box watch-box">
+                        <a href="#">
+                            <figure>
+                                <img src="images/over_league.jpg" alt="오버워치 리그">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">LEAGUE</p>
+                            </figcaption>
+                        </a>
+                        <a href="#">
+                            <figure>
+                                <img src="images/over_contenders.png" alt="오버워치 컨텐더스 코리아">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">OCKL</p>
+                            </figcaption>
+                        </a>
+                    </div>
+                    <div class="game-box pubg-box">
+                        <a href="#">
+                            <figure>
+                                <img src="images/PUBG_PGC.png" alt="펍지 글로벌 챔피언십">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">PGC</p>
+                            </figcaption>
+                        </a>
+                        <a href="#">
+                            <figure>
+                                <img src="images/PUBG_PGI.png" alt="펍지 글로벌 인비테이셔널">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">PGI</p>
+                            </figcaption>
+                        </a>
+                        <a href="#">
+                            <figure>
+                                <img src="images/PUBG_PKC.png" alt="펍지 코리아 챔피언십">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">PKC</p>
+                            </figcaption>
+                        </a>
+                    </div>
+                    <div class="game-box star-box">
+                        <a href="#">
+                            <figure>
+                                <img src="images/star_league.png" alt="글로벌 스타크래프트 리그">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">GSL</p>
+                            </figcaption>
+                        </a>
+                    </div>
+                    <div class="game-box valo-box">
+                        <a href="#">
+                            <figure>
+                                <img src="images/valo_league.png" alt="발로란트 챌린저스">
+                            </figure>
+                            <figcaption>
+                                <p lang="en">VCK</p>
+                            </figcaption>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section class="result-container">
+                <h2 class="blind">일정 및 결과</h2>
+                <div class="calendar-wrap">
+                    <div class="year-wrap">
+                        <button class="prev">
+                            <span class="blind">이전 버튼</span>
+                            <i class='bx bx-chevron-left'></i>
+                        </button>
+                        <div class="year-box">
+                            <ul class="year-list">
+                                <li>2022</li>
+                                <li>2023</li>
+                                <li>2024</li>
+                                <li>2025</li>
+                                <li>2026</li>
+                                <li>2027</li>
+                                <li>2028</li>
+                                <li>2029</li>
+                                <li>2030</li>
+                                <li>2031</li>
+                            </ul>
+                        </div>
+                        <button class="next">
+                            <span class="blind">다음 버튼</span>
+                            <i class='bx bx-chevron-right'></i>
+                        </button>
+                    </div>
+                    <div class="month-wrap">
+                        <ul class="month-pc">
+                            <li><a href="#">1월</a></li>
+                            <li><a href="#">2월</a></li>
+                            <li><a href="#">3월</a></li>
+                            <li><a href="#">4월</a></li>
+                            <li><a href="#">5월</a></li>
+                            <li><a href="#">6월</a></li>
+                            <li><a href="#">7월</a></li>
+                            <li><a href="#">8월</a></li>
+                            <li><a href="#">9월</a></li>
+                            <li><a href="#">10월</a></li>
+                            <li><a href="#">11월</a></li>
+                            <li><a href="#">12월</a></li>
+                        </ul>
+                        <div class="month-mo-wrap">
+                            <button class="month-prev">
+                                <span class="blind">이전 버튼</span>
+                                <i class='bx bx-chevron-left'></i>
+                            </button>
+                            <ul class="month-mo-list">
+                                <li><a href="#">1월</a></li>
+                                <li><a href="#">2월</a></li>
+                                <li><a href="#">3월</a></li>
+                                <li><a href="#">4월</a></li>
+                                <li><a href="#">5월</a></li>
+                                <li><a href="#">6월</a></li>
+                                <li><a href="#">7월</a></li>
+                                <li><a href="#">8월</a></li>
+                                <li><a href="#">9월</a></li>
+                                <li><a href="#">10월</a></li>
+                                <li><a href="#">11월</a></li>
+                                <li><a href="#">12월</a></li>
+                            </ul>
+                            <button class="month-next">
+                                <span class="blind">다음 버튼</span>
+                                <i class='bx bx-chevron-right'></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mon jan">
+                    <ul class="game-date date-1-18">
+                        <li class="date-box">
+                            <span class="date">01월 18일 (수)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">17:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">Dplus KIA</p>
+                                    <span class="score">2</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">0</span>
+                                    <p class="team">DRX</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mon feb">
+                    <ul class="game-date date-2-1">
+                        <li class="date-box">
+                            <span class="date">02월 01일 (수)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">17:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">리브 샌드박스</p>
+                                    <span class="score">2</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">0</span>
+                                    <p class="team">농심 레드포스</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mon mar">
+                    <ul class="game-date date-3-1">
+                        <li class="date-box">
+                            <span class="date">03월 01일 (수)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">17:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">광동프릭스</p>
+                                    <span class="score">0</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">2</span>
+                                    <p class="team">T1</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mon apr">
+                    <ul class="game-date date-4-1">
+                        <li class="date-box">
+                            <span class="date">04월 01일 (토)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">15:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">Dplus KIA</p>
+                                    <span class="score">2</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">0</span>
+                                    <p class="team">DRX</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mon may">
+                    <ul class="game-date date-5-1">
+                        <li class="date-box">
+                            <span class="date">05월 01일 (월)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">17:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">리브 샌드박스</p>
+                                    <span class="score">2</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">0</span>
+                                    <p class="team">농심 레드포스</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mon jun">
+                    <ul class="game-date date-6-1">
+                        <li class="date-box">
+                            <span class="date">06월 01일 (목)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">17:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">광동프릭스</p>
+                                    <span class="score">0</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">2</span>
+                                    <p class="team">T1</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mon jul">
+                    <ul class="game-date date-7-1">
+                        <li class="date-box">
+                            <span class="date">07월 01일 (토)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">15:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">리브 샌드박스</p>
+                                    <span class="score">2</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">0</span>
+                                    <p class="team">농심 레드포스</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mon aug">
+                    <ul class="game-date date-8-1">
+                        <li class="date-box">
+                            <span class="date">08월 01일 (화)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">17:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">리브 샌드박스</p>
+                                    <span class="score">2</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">0</span>
+                                    <p class="team">농심 레드포스</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mon sep">
+                    <ul class="game-date date-9-1">
+                        <li class="date-box">
+                            <span class="date">09월 01일 (금)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">17:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">리브 샌드박스</p>
+                                    <span class="score">2</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">0</span>
+                                    <p class="team">농심 레드포스</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mon oct">
+                    <ul class="game-date date-10-1">
+                        <li class="date-box">
+                            <span class="date">10월 01일 (일)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">15:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">리브 샌드박스</p>
+                                    <span class="score">2</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">0</span>
+                                    <p class="team">농심 레드포스</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mon nov">
+                    <ul class="game-date date-11-1">
+                        <li class="date-box">
+                            <span class="date">11월 01일 (수)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">17:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">리브 샌드박스</p>
+                                    <span class="score">2</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">0</span>
+                                    <p class="team">농심 레드포스</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mon dec">
+                    <ul class="game-date date-12-1">
+                        <li class="date-box">
+                            <span class="date">12월 01일 (금)</span>
+                            <span class="place">서울 LOL PARK</span>
+                        </li>
+                        <li class="game-info">
+                            <div class="left">
+                                <span class="time">17:00</span>
+                                <span class="round">정규시즌 1R</span>
+                            </div>
+                            <div class="center">
+                                <div class="home">
+                                    <p class="team">리브 샌드박스</p>
+                                    <span class="score">2</span>
+                                </div>
+                                <span class="vs">:</span>
+                                <div class="away">
+                                    <span class="score">0</span>
+                                    <p class="team">농심 레드포스</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="replay">다시보기</a>
+                                <span class="place">서울 LOL PARK</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="rank-container">
+                <h2 class="blind">리그 순위</h2>
+                <div class="title-wrap">
+                    <h3 class="league-title" lang="en">2023 LCK SPRING</h3>
+                    <select class="choice-box">
+                        <option lang="en" selected>2023 LCK SPRING</option>
+                        <option lang="en">2022 LCK SUMMER</option>
+                        <option lang="en">2022 LCK SPRING</option>
+                    </select>
+                </div>
+                <ul class="lck-rank">
+                    <li class="list-head">
+                        <div class="left">
+                            <span>순위</span>
+                        </div>
+                        <div class="right">
+                            <span class="win">승</span>
+                            <span class="lose">패</span>
+                            <span class="interval">득실차</span>
+                        </div>
+                    </li>
+                    <li class="list-body">
+                        <div class="left">
+                            <span class="total-rank">1</span>
+                            <img src="images/t1_c.png" alt="t1">
+                            <span class="team">T1</span>
+                        </div>
+                        <div class="right">
+                            <span class="win">17</span>
+                            <span class="lose">1</span>
+                            <span class="interval">27</span>
+                        </div>
+                    </li>
+                    <li class="list-body">
+                        <div class="left">
+                            <span class="total-rank">2</span>
+                            <img src="images/geng_c.png" alt="젠지">
+                            <span class="team">GEN</span>
+                        </div>
+                        <div class="right">
+                            <span class="win">13</span>
+                            <span class="lose">5</span>
+                            <span class="interval">17</span>
+                        </div>
+                    </li>
+                    <li class="list-body">
+                        <div class="left">
+                            <span class="total-rank">3</span>
+                            <img src="images/kt_c.png" alt="kt">
+                            <span class="team">KT</span>
+                        </div>
+                        <div class="right">
+                            <span class="win">13</span>
+                            <span class="lose">5</span>
+                            <span class="interval">13</span>
+                        </div>
+                    </li>
+                    <li class="list-body">
+                        <div class="left">
+                            <span class="total-rank">4</span>
+                            <img src="images/DK.png" alt="디플러스 기아">
+                            <span class="team">DK</span>
+                        </div>
+                        <div class="right">
+                            <span class="win">12</span>
+                            <span class="lose">6</span>
+                            <span class="interval">12</span>
+                        </div>
+                    </li>
+                    <li class="list-body">
+                        <div class="left">
+                            <span class="total-rank">5</span>
+                            <img src="images/hle_c.png" alt="한화생명 이스포츠">
+                            <span class="team">HLE</span>
+                        </div>
+                        <div class="right">
+                            <span class="win">10</span>
+                            <span class="lose">8</span>
+                            <span class="interval">3</span>
+                        </div>
+                    </li>
+                    <li class="list-body">
+                        <div class="left">
+                            <span class="total-rank">6</span>
+                            <img src="images/lsb_c.png" alt="리브샌드박스">
+                            <span class="team">LSB</span>
+                        </div>
+                        <div class="right">
+                            <span class="win">10</span>
+                            <span class="lose">8</span>
+                            <span class="interval">1</span>
+                        </div>
+                    </li>
+                    <li class="list-body">
+                        <div class="left">
+                            <span class="total-rank">7</span>
+                            <img src="images/kdf_c.png" alt="광동프릭스">
+                            <span class="team">KDF</span>
+                        </div>
+                        <div class="right">
+                            <span class="win">6</span>
+                            <span class="lose">12</span>
+                            <span class="interval">-11</span>
+                        </div>
+                    </li>
+                    <li class="list-body">
+                        <div class="left">
+                            <span class="total-rank">8</span>
+                            <img src="images/bro_c.png" alt="브리온">
+                            <span class="team">BRO</span>
+                        </div>
+                        <div class="right">
+                            <span class="win">4</span>
+                            <span class="lose">14</span>
+                            <span class="interval">-18</span>
+                        </div>
+                    </li>
+                    <li class="list-body">
+                        <div class="left">
+                            <span class="total-rank">9</span>
+                            <img src="images/drx_c.png" alt="drx">
+                            <span class="team">DRX</span>
+                        </div>
+                        <div class="right">
+                            <span class="win">3</span>
+                            <span class="lose">15</span>
+                            <span class="interval">-20</span>
+                        </div>
+                    </li>
+                    <li class="list-body">
+                        <div class="left">
+                            <span class="total-rank">10</span>
+                            <img src="images/ns_c.png" alt="농심레드포스">
+                            <span class="team">NS</span>
+                        </div>
+                        <div class="right">
+                            <span class="win">2</span>
+                            <span class="lose">16</span>
+                            <span class="interval">-24</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="f-top">
+            <div class="inner">
+                <a href="#" class="com-intro">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#" class="privacy"><strong>개인정보처리방침</strong></a>
+                <a href="#">티켓판매안내</a>
+                <a href="#" class="cust-info">고객정보취급방침</a>
+                <a href="#">고객센터</a>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="f-bottom">
+                <div class="f-info">
+                    <div class="text">
+                        <span>주소: 21404 인천 부평구 경원대로 1366</span>
+                        <span>ARS: 1588-0000</span>
+                    </div>
+                    <div class="text">
+                        <span>대표자명: 유설화</span>
+                        <span>사업자등록번호: 000-00-00000</span>
+                        <span>통신판매업 신고번호: 제 0000-인천부평-0000호</span>
+                    </div>
+                    <div class="text">
+                        <span>E-mail: lookesports@lookesports.co.kr</span>
+                        <span>개인정보보호 책임자: 김동협</span>
+                    </div>
+                </div>
+                <div class="f-info-mo">
+                    <div class="f-info-btn">
+                        <a href="#">
+                            <span>사업자 정보</span>
+                            <i class='bx bxs-down-arrow'></i>
+                            <i class='bx bxs-up-arrow'></i>
+                        </a>
+                    </div>
+                    <div class="text-box">
+                        <div class="text">
+                            <span>주소: 21404 인천 부평구 경원대로 1366</span>
+                            <span>ARS: 1588-0000</span>
+                        </div>
+                        <div class="text">
+                            <span>대표자명: 유설화</span>
+                            <span>사업자등록번호: 000-00-00000</span>
+                            <span>통신판매업 신고번호: 제 0000-인천부평-0000호</span>
+                        </div>
+                        <div class="text">
+                            <span>E-mail: lookesports@lookesports.co.kr</span>
+                            <span>개인정보보호 책임자: 김동협</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-sns">
+                    <a href="#" class="f-logo-wrap">
+                        <span lang="en">Look eSports</span>
+                    </a>
+                    <ul class="sns-list">
+                        <li>
+                            <a href="#" title="트위터" class="ico_t">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="유튜브" class="ico_y">
+                                <i class='bx bxl-youtube'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="인스타그램" class="ico_i">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="페이스북" class="ico_f">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copy-wrap">
+                    <span lang="en">Copyright © LOOKESPORTS. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <aside>
+        <h2 class="blind">퀵메뉴</h2>
+        <a href="#" class="event-pc" title="2023 lck 스프링 승부예측 이벤트"></a>
+        <div class="visited-box">
+            <h3 class="title">최근 본 경기</h3>
+            <a href="#" class="visited-game">
+                <img src="images/01NSDRX_CL.jpg" alt="리그오브레전드 챌린저스 스프링 농심 대 디알엑스">
+            </a>
+        </div>
+        <a href="#" class="top-btn" lang="en">
+            <span class="blind">사이트 최상단으로 이동</span>
+            <i class='bx bx-arrow-to-top'></i>
+            <span class="text">TOP</span>
+        </a>
+    </aside>
+</body>
+
+</html>

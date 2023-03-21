@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look eSports</title>
+    <link rel="shortcut icon" href="images/favicon1.png">
+    <link rel="stylesheet" href="css/common.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--jQuery-->
+    <!--jQuery 소스삽입  cdnjs 플러그인 사용 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <!--jQuery-ui 소스삽입 (aniamtion 기능, 다양한 ui component)  cdnjs 플러그인 사용 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <ul class="skip-menu">
+        <li><a href="#main">본문 바로가기</a></li>
+        <li><a href="#footer">하단 바로가기</a></li>
+    </ul>
+    <header>
+        <div class="h-top-container">
+            <div class="inner">
+                <h1 class="logo" lang="en"><a href="#" title="홈으로 이동"><span>Look</span><span> eSports</span></a></h1>
+                <div class="h-top-right">
+                    <div class="text-wrap">
+                        <a href="#" class="log-in"><strong>로그인</strong></a>
+                        <a href="#" class="join"><strong>회원가입</strong></a>
+                        <a href="#" class="res-check"><strong>예약확인/취소</strong></a>
+                        <div class="lang-box">
+                            <a href="#" class="lang_ko" lang="en" title="한국어"><strong>KOR</strong>
+                                <i class='bx bxs-down-arrow'></i>
+                            </a>
+                            <div class="lang-box_en">
+                                <a href="#" class="lang_en" lang="en" title="영어"><strong>ENG</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <button class="all-menu-btn">
+                            <span class="blind">메뉴창 열기</span>
+                            <i class='bx bx-menu'></i>
+                        </button>
+                        <button class="all-menu-close">
+                            <span class="blind">메뉴창 닫기</span>
+                            <i class='bx bx-x'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="all-menu-wrap">
+                <div class="all-menu-top">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                </div>
+                <ul class="mo-menu-list">
+                    <li><a href="#">티켓 예매</a></li>
+                    <li><a href="#"><span>일정 및 순위</span><i class='bx bx-plus'></i><i class='bx bx-minus'></i></a>
+                        <ul class="mo-submenu-list">
+                            <li><a href="#">일정/결과</a></li>
+                            <li><a href="#">리그 순위</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>구단 소개</span><i class='bx bx-plus'></i><i class='bx bx-minus'></i></a>
+                        <ul class="mo-submenu-list" lang="en">
+                            <li><a href="#">LEAGUE OF LEGEND</a></li>
+                            <li><a href="#">PUBG</a></li>
+                            <li><a href="#">VALORANT</a></li>
+                            <li><a href="#">OVERWATCH</a></li>
+                            <li><a href="#">KARTRIDER</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">경기장 정보</a></li>
+                    <li><a href="#"><span>승부예측</span><i class='bx bx-plus'></i><i class='bx bx-minus'></i></a>
+                        <ul class="mo-submenu-list" lang="en">
+                            <li><a href="#">LEAGUE OF LEGEND</a></li>
+                            <li><a href="#">STARCRAFT</a></li>
+                            <li><a href="#">PUBG</a></li>
+                            <li><a href="#">VALORANT</a></li>
+                            <li><a href="#">OVERWATCH</a></li>
+                            <li><a href="#">KARTRIDER</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>고객지원</span><i class='bx bx-plus'></i><i class='bx bx-minus'></i></a>
+                        <ul class="mo-submenu-list">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#" lang="en">FAQ</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="h-bottom-container">
+            <div class="inner">
+                <ul class="gnb-list">
+                    <li><a href="#">티켓 예매</a></li>
+                    <li><a href="#">일정 및 순위</a>
+                        <ul class="submenu-list">
+                            <li><a href="#">일정/결과</a></li>
+                            <li><a href="#">리그 순위</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">구단 소개</a>
+                        <ul class="submenu-list" lang="en">
+                            <li><a href="#">LEAGUE OF LEGEND</a></li>
+                            <li><a href="#">PUBG</a></li>
+                            <li><a href="#">VALORANT</a></li>
+                            <li><a href="#">OVERWATCH</a></li>
+                            <li><a href="#">KARTRIDER</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">경기장 정보</a></li>
+                    <li><a href="#">승부예측</a>
+                        <ul class="submenu-list" lang="en">
+                            <li><a href="#">LEAGUE OF LEGEND</a></li>
+                            <li><a href="#">STARCRAFT</a></li>
+                            <li><a href="#">PUBG</a></li>
+                            <li><a href="#">VALORANT</a></li>
+                            <li><a href="#">OVERWATCH</a></li>
+                            <li><a href="#">KARTRIDER</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객지원</a>
+                        <ul class="submenu-list">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#" lang="en">FAQ</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="search-box">
+                    <input type="text" placeholder="검색어를 입력하세요" title="검색어를 입력하세요">
+                    <button class="search-btn">
+                        <span class="blind">검색 버튼</span>
+                        <i class='bx bx-search'></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section class="visual-container">
+            <h2 class="blind">광고 배너</h2>
+            <div class="img-wrapper">
+                <ul class="img-list">
+                    <li>
+                        <a href="#">
+                            <img src="images/banner_1.jpg" alt="발로란트 챌린저스">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/banner_2.jpg" alt="카트라이더 드리프트">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/banner_3.jpg" alt="펍지 위클리 시리즈 동아시아">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/banner_4.jpg" alt="2022 카트라이더리그 슈퍼컵">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/banner_5.jpg" alt="리그오브레전드 챔피언스 코리아">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/banner_6.jpg" alt="우주 이미지">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="dot-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <section class="ticket-container">
+            <div class="inner">
+                <div class="top-wrapper">
+                    <h2 class="title">예매 진행 중</h2>
+                    <a href="#" title="티켓 예매 페이지로 이동" class="s-more-btn" lang="en">more</a>
+                </div>
+                <div class="game-wrapper">
+                    <div class="game-total-box">
+                        <a href="#" class="game-box">
+                            <div class="game-post">
+                                <img src="images/01NSDRX_CL.jpg" alt="리그오브레전드 챌린저스 스프링 농심레드포스 대 디알엑스">
+                            </div>
+                            <div class="game-info">
+                                <p class="game-place">
+                                    WDG 스튜디오
+                                </p>
+                                <p class="sub-title" lang="en">
+                                    [LCK CL] SPRING NS vs DRX
+                                </p>
+                                <p class="game-date">
+                                    01.16<span>(월)</span> 14:00
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="game-total-box">
+                        <a href="#" class="game-box">
+                            <div class="game-post">
+                                <img src="images/02HLEGEN_CL.jpg" alt="리그오브레전드 챌린저스 스프링 한화생명이스포츠 대 젠지">
+                            </div>
+                            <div class="game-info">
+                                <p class="game-place">
+                                    WDG 스튜디오
+                                </p>
+                                <p class="sub-title" lang="en">
+                                    [LCK CL] SPRING HLE vs GEN
+                                </p>
+                                <p class="game-date">
+                                    01.16<span>(월)</span> 17:00
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="game-total-box">
+                        <a href="#" class="game-box">
+                            <div class="game-post">
+                                <img src="images/03BRODK_CL.jpg" alt="리그오브레전드 챌린저스 스프링 브리온 대 디플러스기아">
+                            </div>
+                            <div class="game-info">
+                                <p class="game-place">
+                                    WDG 스튜디오
+                                </p>
+                                <p class="sub-title" lang="en">
+                                    [LCK CL] SPRING BRO vs DK
+                                </p>
+                                <p class="game-date">
+                                    01.16<span>(월)</span> 20:00
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="game-total-box">
+                        <a href="#" class="game-box">
+                            <div class="game-post">
+                                <img src="images/04KDFKT_CL.jpg" alt="리그오브레전드 챌린저스 스프링 광동프릭스 대 케이티롤스터">
+                            </div>
+                            <div class="game-info">
+                                <p class="game-place">
+                                    WDG 스튜디오
+                                </p>
+                                <p class="sub-title" lang="en">
+                                    [LCK CL] SPRING KDF vs KT
+                                </p>
+                                <p class="game-date">
+                                    01.17<span>(화)</span> 17:00
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="game-total-box">
+                        <a href="#" class="game-box">
+                            <div class="game-post">
+                                <img src="images/05T1LIIV_CL.jpg" alt="리그오브레전드 챌린저스 스프링 에스케이티티원 대 리브샌드박스">
+                            </div>
+                            <div class="game-info">
+                                <p class="game-place">
+                                    WDG 스튜디오
+                                </p>
+                                <p class="sub-title" lang="en">
+                                    [LCK CL] SPRING T1 vs LSB
+                                </p>
+                                <p class="game-date">
+                                    01.17<span>(화)</span> 20:00
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <a href="#" class="b-more-btn" title="예매 가능 티켓 더보기" lang="en">more</a>
+                </div>
+            </div>
+        </section>
+        <section class="ex-container">
+            <div class="inner">
+                <div class="top-wrapper">
+                    <h2 class="title">오픈 예정</h2>
+                    <a href="#" class="s-more-btn" lang="en" title="오픈 예정 티켓 페이지로 이동">more</a>
+                </div>
+                <div class="ex-wrapper">
+                    <div class="ex-box">
+                        <a href="#" title="상세보기 페이지로 이동" class="ex-item">
+                            <div class="ex-post">
+                                <img src="images/10_DKDRX.jpg" alt="리그오브레전드 챔피언스 스프링 디플러스기아 대 디알엑스">
+                                <div class="post-blur">
+                                    <strong class="imposible">오픈 전 상품<span>예매 불가</span></strong>
+                                    <span class="detail-view">상세보기</span>
+                                </div>
+                            </div>
+                            <div class="ex-info">
+                                <p class="sub-title" lang="en">
+                                    [LCK] SPRING DK vs DRX
+                                </p>
+                                <div class="d-daybox">
+                                    <p class="d-day">
+                                        01.18<span>(수)</span> 17:00
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ex-box">
+                        <a href="#" title="상세보기 페이지로 이동" class="ex-item">
+                            <div class="ex-post">
+                                <img src="images/11_GENT1.jpg" alt="리그오브레전드 챔피언스 스프링 젠지 대 에스케이티티원">
+                                <div class="post-blur">
+                                    <strong class="imposible">오픈 전 상품<span>예매 불가</span></strong>
+                                    <span class="detail-view">상세보기</span>
+                                </div>
+                            </div>
+                            <div class="ex-info">
+                                <p class="sub-title" lang="en">
+                                    [LCK] SPRING GEN vs T1
+                                </p>
+                                <div class="d-daybox">
+                                    <p class="d-day">
+                                        01.18<span>(수)</span> 19:30
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ex-box">
+                        <a href="#" title="상세보기 페이지로 이동" class="ex-item">
+                            <div class="ex-post">
+                                <img src="images/06NSDK_CL.jpg" alt="리그오브레전드 챌린저스 스프링 농심레드포스 대 디플러스기아">
+                                <div class="post-blur">
+                                    <strong class="imposible">오픈 전 상품<span>예매 불가</span></strong>
+                                    <span class="detail-view">상세보기</span>
+                                </div>
+                            </div>
+                            <div class="ex-info">
+                                <p class="sub-title" lang="en">
+                                    [LCK CL] SPRING NS vs DK
+                                </p>
+                                <div class="d-daybox">
+                                    <p class="d-day">
+                                        01.19<span>(목)</span> 14:00
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ex-box">
+                        <a href="#" title="상세보기 페이지로 이동" class="ex-item">
+                            <div class="ex-post">
+                                <img src="images/07HLEBRO_CL.jpg" alt="리그오브레전드 챌린저스 스프링 한화생명이스포츠 대 브리온">
+                                <div class="post-blur">
+                                    <strong class="imposible">오픈 전 상품<span>예매 불가</span></strong>
+                                    <span class="detail-view">상세보기</span>
+                                </div>
+                            </div>
+                            <div class="ex-info">
+                                <p class="sub-title" lang="en">
+                                    [LCK CL] SPRING HLE vs BRO
+                                </p>
+                                <div class="d-daybox">
+                                    <p class="d-day">
+                                        01.19<span>(목)</span> 14:00
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ex-box">
+                        <a href="#" title="상세보기 페이지로 이동" class="ex-item">
+                            <div class="ex-post">
+                                <img src="images/08GENDRX_CL.jpg" alt="리그오브레전드 챌린저스 스프링 젠지 대 디알엑스">
+                                <div class="post-blur">
+                                    <strong class="imposible">오픈 전 상품<span>예매 불가</span></strong>
+                                    <span class="detail-view">상세보기</span>
+                                </div>
+                            </div>
+                            <div class="ex-info">
+                                <p class="sub-title" lang="en">
+                                    [LCK CL] SPRING GEN vs DRX
+                                </p>
+                                <div class="d-daybox">
+                                    <p class="d-day">
+                                        01.19<span>(목)</span> 14:00
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <a href="#" class="b-more-btn" title="오픈 예정 티켓 더보기" lang="en">more</a>
+                </div>
+            </div>
+        </section>
+        <section class="schedule-container">
+            <h2 class="blind">월간 경기 일정</h2>
+            <div class="inner">
+                <div class="schedule-top"></div>
+                <div class="schedule-bottom">
+                    <div class="schedule-table-wrapper">
+                        <div class="btn-box">
+                            <button class="tbody-prev">
+                                <span class="blind">이전 주 보기</span>
+                                <i class="bx bx-chevron-left"></i>
+                            </button>
+                            <button class="tbody-next">
+                                <span class="blind">다음 주 보기</span>
+                                <i class="bx bx-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="schedule-table">
+                        </div>
+                        <div class="schedule-game d13">
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">14:00</span>
+                                        <span class="g-league" lang="en">LCK CL</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/ns_c.png" alt="농심레드포스">
+                                            </div>
+                                            <span class="team" lang="en">NS</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/drx_c.png" alt="디알엑스">
+                                            </div>
+                                            <span class="team" lang="en">DRX</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">17:00</span>
+                                        <span class="g-league" lang="en">LCK CL</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/hle_c.png" alt="한화생명이스포츠">
+                                            </div>
+                                            <span class="team" lang="en">HLE</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/geng_c.png" alt="젠지">
+                                            </div>
+                                            <span class="team" lang="en">GEN</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">20:00</span>
+                                        <span class="g-league" lang="en">LCK CL</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/bro_c.png" alt="브리온">
+                                            </div>
+                                            <span class="team" lang="en">BRO</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/DK.png" alt="디플러스기아">
+                                            </div>
+                                            <span class="team" lang="en">DK</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="schedule-game d14">
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">17:00</span>
+                                        <span class="g-league" lang="en">LCK CL</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/kdf_c.png" alt="광동프릭스">
+                                            </div>
+                                            <span class="team" lang="en">KDF</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/kt_c.png" alt="kt롤스터스">
+                                            </div>
+                                            <span class="team" lang="en">KT</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">20:00</span>
+                                        <span class="g-league" lang="en">LCK CL</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/t1_c.png" alt="skt 티원">
+                                            </div>
+                                            <span class="team" lang="en">T1</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/lsb_c.png" alt="리브샌드박스">
+                                            </div>
+                                            <span class="team" lang="en">LSB</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="schedule-game d15">
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">17:00</span>
+                                        <span class="g-league" lang="en">LCK</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/DK.png" alt="디플러스 기아">
+                                            </div>
+                                            <span class="team" lang="en">DK</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/drx_c.png" alt="drx">
+                                            </div>
+                                            <span class="team" lang="en">DRX</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">19:30</span>
+                                        <span class="g-league" lang="en">LCK</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/geng_c.png" alt="젠지">
+                                            </div>
+                                            <span class="team" lang="en">GEN</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/t1_c.png" alt="skt 티원">
+                                            </div>
+                                            <span class="team" lang="en">T1</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="schedule-game d16">
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">14:00</span>
+                                        <span class="g-league" lang="en">LCK CL</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/ns_c.png" alt="농심레드포스">
+                                            </div>
+                                            <span class="team" lang="en">NS</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/DK.png" alt="디플러스 기아">
+                                            </div>
+                                            <span class="team" lang="en">DK</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">14:00</span>
+                                        <span class="g-league" lang="en">LCK CL</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/hle_c.png" alt="한화생명 이스포츠">
+                                            </div>
+                                            <span class="team" lang="en">HLE</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/bro_c.png" alt="브리온">
+                                            </div>
+                                            <span class="team" lang="en">BRO</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">14:00</span>
+                                        <span class="g-league" lang="en">LCK CL</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/geng_c.png" alt="젠지">
+                                            </div>
+                                            <span class="team" lang="en">GEN</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/drx_c.png" alt="디알엑스">
+                                            </div>
+                                            <span class="team" lang="en">DRX</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">17:00</span>
+                                        <span class="g-league" lang="en">LCK</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/kdf_c.png" alt="광동프릭스">
+                                            </div>
+                                            <span class="team" lang="en">KDF</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/hle_c.png" alt="한화생명 이스포츠">
+                                            </div>
+                                            <span class="team" lang="en">HLE</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">19:30</span>
+                                        <span class="g-league" lang="en">LCK</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/ns_c.png" alt="농심 레드포스">
+                                            </div>
+                                            <span class="team" lang="en">NS</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/bro_c.png" alt="브리온">
+                                            </div>
+                                            <span class="team" lang="en">BRO</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="schedule-game d17">
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">14:00</span>
+                                        <span class="g-league" lang="en">LCK CL</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/lsb_c.png" alt="리브샌드박스">
+                                            </div>
+                                            <span class="team" lang="en">LSB</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/kt_c.png" alt="kt롤스터스">
+                                            </div>
+                                            <span class="team" lang="en">KT</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">14:00</span>
+                                        <span class="g-league" lang="en">LCK CL</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/t1_c.png" alt="skt 티원">
+                                            </div>
+                                            <span class="team" lang="en">T1</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/kdf_c.png" alt="광동프릭스">
+                                            </div>
+                                            <span class="team" lang="en">KDF</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">17:00</span>
+                                        <span class="g-league" lang="en">LCK</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/kt_c.png" alt="kt롤스터스">
+                                            </div>
+                                            <span class="team" lang="en">KT</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/t1_c.png" alt="skt 티원">
+                                            </div>
+                                            <span class="team" lang="en">T1</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">19:30</span>
+                                        <span class="g-league" lang="en">LCK</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/lsb_c.png" alt="리브샌드박스">
+                                            </div>
+                                            <span class="team" lang="en">LSB</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/DK.png" alt="디플러스기아">
+                                            </div>
+                                            <span class="team" lang="en">DK</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="schedule-game d18">
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">15:00</span>
+                                        <span class="g-league" lang="en">LCK</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/drx_c.png" alt="drx">
+                                            </div>
+                                            <span class="team" lang="en">DRX</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/geng_c.png" alt="젠지">
+                                            </div>
+                                            <span class="team" lang="en">GEN</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">17:30</span>
+                                        <span class="g-league" lang="en">LCK</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/bro_c.png" alt="브리온">
+                                            </div>
+                                            <span class="team" lang="en">BRO</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/kt_c.png" alt="kt롤스터스">
+                                            </div>
+                                            <span class="team" lang="en">KT</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="schedule-game d19">
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">15:00</span>
+                                        <span class="g-league" lang="en">LCK</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/hle_c.png" alt="한화생명 이스포츠">
+                                            </div>
+                                            <span class="team" lang="en">HLE</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/lsb_c.png" alt="리브샌드박스">
+                                            </div>
+                                            <span class="team" lang="en">LSB</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="g-time-wrap">
+                                <a href="#" class="g-time-box">
+                                    <div class="g-time-top">
+                                        <span class="g-time">17:30</span>
+                                        <span class="g-league" lang="en">LCK</span>
+                                    </div>
+                                    <div class="g-bottom">
+                                        <div class="g-bottom-left">
+                                            <div class="img-wrap">
+                                                <img src="images/kt_c.png" alt="kt롤스터스">
+                                            </div>
+                                            <span class="team" lang="en">KT</span>
+                                        </div>
+                                        <div class="g-bottom-mid">
+                                            <span class="text">VS</span>
+                                        </div>
+                                        <div class="g-bottom-right">
+                                            <div class="img-wrap">
+                                                <img src="images/ns_c.png" alt="농심 레드포스">
+                                            </div>
+                                            <span class="team" lang="en">NS</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <a href="#" class="b-more-btn" title="경기 일정 전체 보기" lang="en">All</a>
+                </div>
+            </div>
+        </section>
+        <section class="event-container">
+            <a href="#" class="event-mo" title="2023 lck 스프링 승부예측 이벤트"></a>
+        </section>
+        <section class="team-container">
+            <div class="inner">
+                <div class="top-wrapper">
+                    <h2 class="title">프로 팀</h2>
+                    <a href="#" title="프로 팀 소개 페이지로 이동" class="s-more-btn" lang="en">more</a>
+                </div>
+                <ul class="league-box">
+                    <li><a href="#" title="리그오브레전드" lang="en" class="on">LOL</a></li>
+                    <li><a href="#" title="배틀그라운드" lang="en">PUBG</a></li>
+                    <li><a href="#" title="발로란트" lang="en">VALOLANT</a></li>
+                    <li><a href="#" title="오버워치" lang="en">OVERWATCH</a></li>
+                    <li><a href="#" title="카트라이더" lang="en">KARTRIDER</a></li>
+                </ul>
+                <ul class="team-box">
+                    <li>
+                        <ul class="lol-team">
+                            <li>
+                                <a href="#" title="DRX">
+                                    <img src="images/drx_c.png" alt="DRX">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="리브샌드박스">
+                                    <img src="images/lsb_c.png" alt="리브샌드박스">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="한화생명 이스포츠">
+                                    <img src="images/hle_c.png" alt="한화생명이스포츠">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="젠지">
+                                    <img src="images/geng_c.png" alt="젠지">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="농심 레드포스">
+                                    <img src="images/ns_c.png" alt="농심레드포스">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="브리온">
+                                    <img src="images/bro_c.png" alt="브리온">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="티원">
+                                    <img src="images/t1_c.png" alt="에스케이티티원">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="KT 롤스터">
+                                    <img src="images/kt_c.png" alt="케이티롤스터">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="디플러스 기아">
+                                    <img src="images/DK.png" alt="디플러스기아">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="광동프릭스">
+                                    <img src="images/kdf_c.png" alt="광동프릭스">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="pubg-team">
+                            <li>
+                                <a href="#" title="ATA">
+                                    <img src="images/ATA_LOGO_Origin.png" alt="ATA">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="CHIBLI esports">
+                                    <img src="images/VRLU GHIBLI logo.png" alt="chibli 이스포츠">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Danawa esports">
+                                    <img src="images/Danawa e-sports.png" alt="다나와 이스포츠">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="젠지">
+                                    <img src="images/geng_c.png" alt="젠지">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="eagle owls">
+                                    <img src="images/Eagle Owls 2022.png" alt="이글 오울스">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="emTek StormX">
+                                    <img src="images/emtek-stormx-e-s.png" alt="emTek StormX">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="GNL esports">
+                                    <img src="images/GNL ESPORTS 2023.png" alt="gnl 이스포츠">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="GOnGO Prince">
+                                    <img src="images/GoNGo Prince log.png" alt="고앤고 프린스">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="Maru gaming">
+                                    <img src="images/Maru Gaming.png" alt="마루 게이밍">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="광동프릭스">
+                                    <img src="images/kdf_c.png" alt="광동프릭스">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="OP.GG esports">
+                                    <img src="images/OPGG SPORTS note.png" alt="opgg 이스포츠">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="DPLUS KIA">
+                                    <img src="images/DK.png" alt="디플러스 기아">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="valorant-team">
+                            <li>
+                                <a href="#" title="DRX">
+                                    <img src="images/drx_c.png" alt="DRX">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="DH.CNJ">
+                                    <img src="images/DH_CHJ.png" alt="DH.CNJ">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Maru gaming">
+                                    <img src="images/Maru Gaming.png" alt="마루 게이밍">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="젠지">
+                                    <img src="images/geng_c.png" alt="젠지">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="농심 레드포스">
+                                    <img src="images/ns_c.png" alt="농심레드포스">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="SPEAR gaming">
+                                    <img src="images/Spear Gaming Log.png" alt="스피어 게이밍">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="티원">
+                                    <img src="images/t1_c.png" alt="에스케이티티원">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="WGS X-IT">
+                                    <img src="images/WGS_X_IT.png" alt="WGS X-IT">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="디플러스 기아">
+                                    <img src="images/DK.png" alt="디플러스기아">
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="overwatch-team">
+                            <li>
+                                <a href="#" title="Incendia Evolution">
+                                    <img src="images/IncendiaEvolution.png" alt="Incendia Evolution">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="JNGK">
+                                    <img src="images/JNGK Logo.png" alt="JNGK">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="O2 Blast">
+                                    <img src="images/O2_Blast.png" alt="O2 blast">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="PANTHERA">
+                                    <img src="images/PANTHERA.png" alt="PANTHERA">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="Sin Prisa gaming">
+                                    <img src="images/Sin Prisa Gaming.png" alt="Sin Prisa 게이밍">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="SLT">
+                                    <img src="images/SLT logo.png" alt="SLT">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="티원">
+                                    <img src="images/t1_c.png" alt="에스케이티티원">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="Talon esports">
+                                    <img src="images/Talon_Esports.png" alt="탈론 이스포츠">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="Team Diamond">
+                                    <img src="images/Team Diamond S2.png" alt="팀 다이아몬드">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="WGS Phoenix">
+                                    <img src="images/WGS Phoenix Logo.png" alt="WGS phoenix">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="kart-team">
+                            <li>
+                                <a href="#" title="GAME COACH">
+                                    <img src="images/Game Coach logo.png" alt="게임 코치">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="ROX gaming">
+                                    <img src="images/ROX-Gaming-logo.png" alt="락스 게이밍">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="SGA인천">
+                                    <img src="images/SGA Inchon.png" alt="SGA인천">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="btn-box">
+                    <a href="#" class="b-more-btn" title="프로 팀 정보 더보기" lang="en">more</a>
+                </div>
+            </div>
+        </section>
+        <section class="stadium-container">
+            <h2 class="title">경기장</h2>
+            <div class="stadium-wrap">
+                <ul class="stadium-list">
+                    <li>
+                        <a href="#" title="V.SPACE">
+                            <img src="images/V_SPACE.jpg" alt="브이스페이스">
+                            <div class="img-mask" lang=en>V.SPACE</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="LOL PARK">
+                            <img src="images/LOL_PARK.jpg" alt="롤파크">
+                            <div class="img-mask" lang="en">LoL PARK</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="광주 이스포츠 경기장">
+                            <img src="images/GJ_ESPORT.jpg" alt="광주 이스포츠 경기장">
+                            <div class="img-mask">광주 이스포츠 경기장</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="WDG 스튜디오">
+                            <img src="images/WDG_STUDIO.jpg" alt="WDG스튜디오">
+                            <div class="img-mask">WDG스튜디오</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="대전 이스포츠 경기장">
+                            <img src="images/DJ_ESPORT.jpg" alt="대전 이스포츠 경기장">
+                            <div class="img-mask">대전 이스포츠 경기장</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="비타500 콜로세움">
+                            <img src="images/BITA500.jpg" alt="비타500 콜로세움">
+                            <div class="img-mask">비타500 콜로세움</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="상암 아프리카 콜로세움">
+                            <img src="images/SANGAM.jpg" alt="상암 아프리카 콜로세움">
+                            <div class="img-mask">상암 아프리카 콜로세움</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="프릭업 스튜디오">
+                            <img src="images/FREEKUP.jpg" alt="프릭업 스튜디오">
+                            <div class="img-mask">프릭업 스튜디오</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="부산 벡스코">
+                            <img src="images/BS_BEXCO.jpg" alt="부산 벡스코">
+                            <div class="img-mask">부산 벡스코</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="부산 이스포츠 경기장">
+                            <img src="images/BS_ESPORT.jpg" alt="부산 이스포츠 경기장">
+                            <div class="img-mask">부산 이스포츠 경기장</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="강릉 아이스 아레나">
+                            <img src="images/GANGNEUNG.jpg" alt="강릉 아이스 아레나">
+                            <div class="img-mask">강릉 아이스 아레나</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="일산 킨텍스">
+                            <img src="images/KINTEX.jpg" alt="일산 킨텍스">
+                            <div class="img-mask">일산 킨텍스</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="광명 IVEX">
+                            <img src="images/IVEX.jpg" alt="광명 아이벡스">
+                            <div class="img-mask">광명 IVEX</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="VSG 아레나">
+                            <img src="images/VSG_ARENA.jpg" alt="VSG 아레나">
+                            <div class="img-mask">VSG 아레나</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="V.SPACE">
+                            <img src="images/V_SPACE.jpg" alt="브이스페이스">
+                            <div class="img-mask" lang=en>V.SPACE</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="LOL PARK">
+                            <img src="images/LOL_PARK.jpg" alt="롤파크">
+                            <div class="img-mask" lang="en">LoL PARK</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="광주 이스포츠 경기장">
+                            <img src="images/GJ_ESPORT.jpg" alt="광주 이스포츠 경기장">
+                            <div class="img-mask">광주 이스포츠 경기장</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="WDG 스튜디오">
+                            <img src="images/WDG_STUDIO.jpg" alt="WDG스튜디오">
+                            <div class="img-mask">WDG스튜디오</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="대전 이스포츠 경기장">
+                            <img src="images/DJ_ESPORT.jpg" alt="대전 이스포츠 경기장">
+                            <div class="img-mask">대전 이스포츠 경기장</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="비타500 콜로세움">
+                            <img src="images/BITA500.jpg" alt="비타500 콜로세움">
+                            <div class="img-mask">비타500 콜로세움</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="상암 아프리카 콜로세움">
+                            <img src="images/SANGAM.jpg" alt="상암 아프리카 콜로세움">
+                            <div class="img-mask">상암 아프리카 콜로세움</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="프릭업 스튜디오">
+                            <img src="images/FREEKUP.jpg" alt="프릭업 스튜디오">
+                            <div class="img-mask">프릭업 스튜디오</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="부산 벡스코">
+                            <img src="images/BS_BEXCO.jpg" alt="부산 벡스코">
+                            <div class="img-mask">부산 벡스코</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="부산 이스포츠 경기장">
+                            <img src="images/BS_ESPORT.jpg" alt="부산 이스포츠 경기장">
+                            <div class="img-mask">부산 이스포츠 경기장</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="강릉 아이스 아레나">
+                            <img src="images/GANGNEUNG.jpg" alt="강릉 아이스 아레나">
+                            <div class="img-mask">강릉 아이스 아레나</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="일산 킨텍스">
+                            <img src="images/KINTEX.jpg" alt="일산 킨텍스">
+                            <div class="img-mask">일산 킨텍스</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="광명 IVEX">
+                            <img src="images/IVEX.jpg" alt="광명 아이벡스">
+                            <div class="img-mask">광명 IVEX</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="VSG 아레나">
+                            <img src="images/VSG_ARENA.jpg" alt="VSG 아레나">
+                            <div class="img-mask">VSG 아레나</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-box">
+                <a href="#" class="b-more-btn" lang="en" title="경기장 전체 보기">All
+                </a>
+            </div>
+        </section>
+        <section class="notice-container">
+            <h2 class="blind">뉴스, 공지 영역</h2>
+            <div class="inner">
+                <article class="news-wrapper">
+                    <div class="top-wrapper">
+                        <h3 class="title">뉴스</h3>
+                        <a href="#" class="s-more-btn" lang="en" title="더보기">more</a>
+                    </div>
+                    <div class="text-wrapper">
+                        <a href="#" class="text">
+                            <p>이정현 아나운서, 2023 시즌은 '발로란트'에 전념</p>
+                            <span>23-01-06</span>
+                        </a>
+                        <a href="#" class="text">
+                            <p>멕시코 전문가 "새해 LCK 4대 미드는..."[LoL]</p>
+                            <span>23-01-06</span>
+                        </a>
+                        <a href="#" class="text">
+                            <p>황제의 귀환, '카트라이더' 문호준 선수 복귀 선언</p>
+                            <span>23-01-06</span>
+                        </a>
+                    </div>
+                </article>
+                <article class="notice-wrapper">
+                    <div class="top-wrapper">
+                        <h3 class="title">공지사항</h3>
+                        <a href="#" class="s-more-btn" lang="en" title="더보기">more</a>
+                    </div>
+                    <div class="text-wrapper">
+                        <a href="#" class="text">
+                            <p>[이벤트] 2023 LCK 스프링 정규시즌 승부예측</p>
+                            <span>23-01-05</span>
+                        </a>
+                        <a href="#" class="text">
+                            <p>서비스 장애 정상화 안내</p>
+                            <span>22-11-06</span>
+                        </a>
+                        <a href="#" class="text">
+                            <p>서비스 장애 관련 공지</p>
+                            <span>22-11-06</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="f-top">
+            <div class="inner">
+                <a href="#" class="com-intro">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#" class="privacy"><strong>개인정보처리방침</strong></a>
+                <a href="#">티켓판매안내</a>
+                <a href="#" class="cust-info">고객정보취급방침</a>
+                <a href="#">고객센터</a>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="f-bottom">
+                <div class="f-info">
+                    <div class="text">
+                        <span>주소: 21404 인천 부평구 경원대로 1366</span>
+                        <span>ARS: 1588-0000</span>
+                    </div>
+                    <div class="text">
+                        <span>대표자명: 유설화</span>
+                        <span>사업자등록번호: 000-00-00000</span>
+                        <span>통신판매업 신고번호: 제 0000-인천부평-0000호</span>
+                    </div>
+                    <div class="text">
+                        <span>E-mail: lookesports@lookesports.co.kr</span>
+                        <span>개인정보보호 책임자: 김동협</span>
+                    </div>
+                </div>
+                <div class="f-info-mo">
+                    <div class="f-info-btn">
+                        <a href="#">
+                            <span>사업자 정보</span>
+                            <i class='bx bxs-down-arrow'></i>
+                            <i class='bx bxs-up-arrow'></i>
+                        </a>
+                    </div>
+                    <div class="text-box">
+                        <div class="text">
+                            <span>주소: 21404 인천 부평구 경원대로 1366</span>
+                            <span>ARS: 1588-0000</span>
+                        </div>
+                        <div class="text">
+                            <span>대표자명: 유설화</span>
+                            <span>사업자등록번호: 000-00-00000</span>
+                            <span>통신판매업 신고번호: 제 0000-인천부평-0000호</span>
+                        </div>
+                        <div class="text">
+                            <span>E-mail: lookesports@lookesports.co.kr</span>
+                            <span>개인정보보호 책임자: 김동협</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-sns">
+                    <a href="#" class="f-logo-wrap">
+                        <span lang="en">Look eSports</span>
+                    </a>
+                    <ul class="sns-list">
+                        <li>
+                            <a href="#" title="트위터" class="ico_t">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="유튜브" class="ico_y">
+                                <i class='bx bxl-youtube'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="인스타그램" class="ico_i">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="페이스북" class="ico_f">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copy-wrap">
+                    <span lang="en">Copyright © LOOKESPORTS. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <aside>
+        <h2 class="blind">퀵메뉴</h2>
+        <a href="#" class="event-pc" title="2023 lck 스프링 승부예측 이벤트"></a>
+        <div class="visited-box">
+            <h3 class="title">최근 본 경기</h3>
+            <a href="#" class="visited-game">
+                <img src="images/01NSDRX_CL.jpg" alt="리그오브레전드 챌린저스 스프링 농심 대 디알엑스">
+            </a>
+        </div>
+        <a href="#" class="top-btn" lang="en">
+            <span class="blind">사이트 최상단으로 이동</span>
+            <i class='bx bx-arrow-to-top'></i>
+            <span class="text">TOP</span>
+        </a>
+    </aside>
+</body>
+
+</html>

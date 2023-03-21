@@ -1,0 +1,45 @@
+.blind{
+    position:absolute;
+    width:1px;
+    height:1px;
+    overflow: hidden;
+    clip:rect(1px 1px 1px 1px);
+    z-index:-1;
+    border:none;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.inner{
+    width:1200px;
+    margin:0 auto;
+    height:100%;
+    box-sizing: border-box;
+    position:relative;
+}
+
+.skip-menu li a{
+    position:absolute;
+    top:-50px;
+    left:0;
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    font-size: 30px;
+    background:#000;
+    color:#fff;
+    text-align: center;
+    z-index: 999;
+}
+.skip-menu li a:focus{
+    top:0;
+}
+body,html{
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height:1;
+}
+[lang=en]{
+    font-family: 'Roboto', sans-serif;
+}
