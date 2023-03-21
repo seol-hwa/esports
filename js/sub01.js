@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     lang();
     mobMenu();
     nav();
@@ -108,29 +108,66 @@ function nav() {
         sub.stop().slideUp(dura);
     }
 }
-function main(){
-    var firstTitle=$('.large-scale').children();
-    var secondTitle=$('.middle-scale').children();
-    var thirdTitle=$('.small-scale').find('a');
-    var setNum=0;
+function main() {
+    var firstTitle = $('.large-scale').children();
+    var secondTitle = $('.middle-scale').children();
+    var thirdTitle = $('.small-scale').find('a');
+    var setNum = 0;
+    var gameBox = $('.game-box');
+    var yearList = $('.year-list');
+    var yearWidth = yearList.children().innerWidth();
+    var yearSize = yearList.children().size();
+    var nextYear = $('.next');
+    var prevYear = $('.prev');
+    var yearNum = 0;
 
     firstTitle.eq(setNum).addClass('on');
     secondTitle.eq(setNum).addClass('on');
     thirdTitle.eq(setNum).addClass('on');
+    yearList.css({ Width: yearWidth * yearSize });
 
-    firstTitle.on('click',function(){
+    firstTitle.on('click', function () {
         firstTitle.removeClass('on');
         $(this).addClass('on');
     })
 
-    secondTitle.on('click',function(){
+    secondTitle.on('click', function () {
+        setNum = $(this).index();
         secondTitle.removeClass('on');
+        $(this).addClass('on');
+
+        if (setNum > 0) {
+            gameBox.hide();
+            $('.small-scale').children().eq(setNum - 1).show();
+            thirdTitle.removeClass('on');
+            $('.small-scale').children().eq(setNum - 1).children().eq(0).addClass('on');
+        } else {
+            gameBox.show();
+            thirdTitle.removeClass('on');
+            thirdTitle.eq(setNum).addClass('on');
+        }
+    })
+
+    thirdTitle.on('click', function () {
+        thirdTitle.removeClass('on');
         $(this).addClass('on');
     })
 
-    thirdTitle.on('click',function(){
-        thirdTitle.removeClass('on');
-        $(this).addClass('on');
+    nextYear.on('click', function () {
+        yearNum++;
+        yearList.stop().animate({ left: -yearWidth * yearNum }, 0);
+        if (yearList.position().left <= -1350) {
+            yearNum = yearSize-1;
+            yearList.stop().animate({ left: -yearWidth * yearNum }, 0);
+        }
+    })
+    prevYear.on('click',function(){
+        yearNum--;
+        yearList.stop().animate({ left: -yearWidth * yearNum }, 0);
+        if (yearList.position().left >= 0) {
+            yearNum = 0;
+            yearList.stop().animate({ left: -yearWidth * yearNum }, 0);
+        }
     })
 }
 function footer() {

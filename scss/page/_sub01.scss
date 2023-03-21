@@ -131,7 +131,6 @@
 
     .result-container {
         margin-bottom: 120px;
-        display: none;
 
         .calendar-wrap {
             .year-wrap {
@@ -245,132 +244,134 @@
             }
         }
 
-        .mon {
+        .result-wrap {
+            .mon {
 
-            display: none;
+                display: none;
 
-            .game-date {
-                .date-box {
-                    border-bottom: 1px solid $borderColor;
-                    background: #fff0f0;
-                    padding: 10px 26px;
-                    display: flex;
-                    justify-content: space-between;
-
-                    .date {
-                        color: $titleColor;
-                        font-size: 20px;
-                    }
-
-                    .place {
-                        color: #666;
-                        display: none;
-                    }
-                }
-
-                .game-info {
-                    border-bottom: 1px solid $borderColor;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 4px 0;
-
-                    .left {
+                .game-date {
+                    .date-box {
+                        border-bottom: 1px solid $borderColor;
+                        background: #fff0f0;
+                        padding: 10px 26px;
                         display: flex;
-                        align-items: center;
-                        margin-left: 26px;
+                        justify-content: space-between;
 
-                        .time {
-                            font-size: 18px;
+                        .date {
                             color: $titleColor;
-                            padding-right: 60px;
-
-                            &:after {
-                                content: "종료";
-                                display: inline-block;
-                                padding: 4px;
-                                color: #999;
-                                background: #ececec;
-                                border-radius: 3px;
-                                font-size: 14px;
-                                margin-left: 10px;
-                            }
-                        }
-
-                        .round {
-                            font-size: 16px;
-                            color: #666;
-                        }
-                    }
-
-                    .center {
-                        display: flex;
-                        align-items: center;
-
-                        .home {
-                            display: flex;
-                            align-items: center;
-
-                            .team {
-                                color: $titleColor;
-                                font-size: 18px;
-                                width: 200px;
-                                text-align: right;
-                                margin-right: 14px;
-                                @include shortening(1, 0);
-                            }
-
-                            .score {
-                                font-size: 24px;
-                                color: #999;
-                            }
-                        }
-
-                        .vs {
-                            color: $borderColor;
-                            margin: 0 10px;
-                        }
-
-                        .away {
-                            display: flex;
-                            align-items: center;
-
-                            .team {
-                                color: $titleColor;
-                                font-size: 18px;
-                                margin-left: 14px;
-                                width: 200px;
-                                @include shortening(1, 0);
-                            }
-
-                            .score {
-                                font-size: 24px;
-                                color: #999;
-                            }
-                        }
-                    }
-
-                    .right {
-                        display: flex;
-                        align-items: center;
-                        margin-right: 26px;
-
-                        .replay {
-                            color: #555;
-                            border: 1px solid $borderColor;
-                            border-radius: 5px;
-                            display: flex;
-                            padding: 6px;
-                            margin-right: 50px;
-
-                            &:hover {
-                                border-color: $btnBlack;
-                            }
+                            font-size: 20px;
                         }
 
                         .place {
                             color: #666;
-                            text-align: center;
+                            display: none;
+                        }
+                    }
+
+                    .game-info {
+                        border-bottom: 1px solid $borderColor;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 4px 0;
+
+                        .left {
+                            display: flex;
+                            align-items: center;
+                            margin-left: 26px;
+
+                            .time {
+                                font-size: 18px;
+                                color: $titleColor;
+                                padding-right: 60px;
+
+                                &:after {
+                                    content: "종료";
+                                    display: inline-block;
+                                    padding: 4px;
+                                    color: #999;
+                                    background: #ececec;
+                                    border-radius: 3px;
+                                    font-size: 14px;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .round {
+                                font-size: 16px;
+                                color: #666;
+                            }
+                        }
+
+                        .center {
+                            display: flex;
+                            align-items: center;
+
+                            .home {
+                                display: flex;
+                                align-items: center;
+
+                                .team {
+                                    color: $titleColor;
+                                    font-size: 18px;
+                                    width: 200px;
+                                    text-align: right;
+                                    margin-right: 14px;
+                                    @include shortening(1, 0);
+                                }
+
+                                .score {
+                                    font-size: 24px;
+                                    color: #999;
+                                }
+                            }
+
+                            .vs {
+                                color: $borderColor;
+                                margin: 0 10px;
+                            }
+
+                            .away {
+                                display: flex;
+                                align-items: center;
+
+                                .team {
+                                    color: $titleColor;
+                                    font-size: 18px;
+                                    margin-left: 14px;
+                                    width: 200px;
+                                    @include shortening(1, 0);
+                                }
+
+                                .score {
+                                    font-size: 24px;
+                                    color: #999;
+                                }
+                            }
+                        }
+
+                        .right {
+                            display: flex;
+                            align-items: center;
+                            margin-right: 26px;
+
+                            .replay {
+                                color: #555;
+                                border: 1px solid $borderColor;
+                                border-radius: 5px;
+                                display: flex;
+                                padding: 6px;
+                                margin-right: 50px;
+
+                                &:hover {
+                                    border-color: $btnBlack;
+                                }
+                            }
+
+                            .place {
+                                color: #666;
+                                text-align: center;
+                            }
                         }
                     }
                 }
@@ -380,6 +381,8 @@
 
     .rank-container {
         margin-bottom: 120px;
+        display: none;
+
         .title-wrap {
             display: flex;
             justify-content: space-between;
@@ -401,13 +404,14 @@
         }
 
         .lck-rank {
-            li{
+            li {
                 display: flex;
                 justify-content: space-between;
                 border-bottom: 1px solid $borderColor;
                 box-sizing: border-box;
                 align-items: center;
             }
+
             .list-head {
                 border-top: 1px solid $borderColor;
                 height: 50px;
@@ -446,7 +450,7 @@
                         display: flex;
                         width: 30px;
                         justify-content: center;
-                        margin-right:60px;
+                        margin-right: 60px;
                         font-size: 30px;
                         color: $titleColor;
                     }
@@ -470,16 +474,17 @@
                     .interval {
                         font-size: 18px;
                         color: $titleColor;
-                        width:30px;
+                        width: 30px;
                         display: flex;
                         justify-content: center;
                     }
 
                     .interval {
-                        margin-left:150px;
+                        margin-left: 150px;
                     }
-                    .lose{
-                        margin-left:136px;
+
+                    .lose {
+                        margin-left: 136px;
                     }
                 }
             }
@@ -591,23 +596,27 @@
                         }
                     }
                 }
-                .rank-container{
-                    .lck-rank{
-                        .list-head{
-                            .right{
+
+                .rank-container {
+                    .lck-rank {
+                        .list-head {
+                            .right {
+
                                 .lose,
-                                .interval{
-                                    margin-left:100px;
+                                .interval {
+                                    margin-left: 100px;
                                 }
                             }
                         }
-                        .list-body{
-                            .right{
-                                .interval{
-                                    margin-left:110px;
+
+                        .list-body {
+                            .right {
+                                .interval {
+                                    margin-left: 110px;
                                 }
-                                .lose{
-                                    margin-left:96px;
+
+                                .lose {
+                                    margin-left: 96px;
                                 }
                             }
                         }
@@ -709,59 +718,74 @@
                         }
                     }
                 }
-                .rank-container{
-                    .title-wrap{
+
+                .rank-container {
+                    .title-wrap {
                         flex-direction: column;
-                        gap:10px;
-                        .league-title{
+                        gap: 10px;
+
+                        .league-title {
                             font-size: 20px;
                             display: flex;
-                            width:100%;
+                            width: 100%;
                         }
-                        .choice-box{
-                            order:-1;
-                            width:260px;
+
+                        .choice-box {
+                            order: -1;
+                            width: 260px;
                         }
                     }
-                    .lck-rank{
-                        .list-head{
-                            padding:0 10px 0 6px;
-                            .right{
+
+                    .lck-rank {
+                        .list-head {
+                            padding: 0 10px 0 6px;
+
+                            .right {
+
                                 .win,
                                 .lose,
-                                .interval{
+                                .interval {
                                     font-size: 18px;
                                 }
-                                .lose{
-                                    margin-left:26px;
+
+                                .lose {
+                                    margin-left: 26px;
                                 }
-                                .interval{
-                                    margin-left:14px;
+
+                                .interval {
+                                    margin-left: 14px;
                                 }
                             }
                         }
-                        .list-body{
+
+                        .list-body {
                             padding: 0 10px 0 10px;
-                            .left{
-                                .total-rank{
-                                    margin-right:20px;
+
+                            .left {
+                                .total-rank {
+                                    margin-right: 20px;
                                     font-size: 18px;
                                 }
-                                .team{
+
+                                .team {
                                     font-size: 16px;
                                 }
                             }
-                            .right{
+
+                            .right {
+
                                 .win,
                                 .lose,
-                                .interval{
+                                .interval {
                                     font-size: 16px;
                                 }
-                                .interval{
-                                    margin-left:26px;
+
+                                .interval {
+                                    margin-left: 26px;
                                 }
-                                .lose{
-                                    margin-left:20px;
+
+                                .lose {
+                                    margin-left: 20px;
                                 }
                             }
                         }
@@ -814,11 +838,12 @@
                         }
                     }
                 }
-                .rank-container{
-                    .lck-rank{
-                        .list-body{
-                            .left{
-                                img{
+
+                .rank-container {
+                    .lck-rank {
+                        .list-body {
+                            .left {
+                                img {
                                     display: none;
                                 }
                             }

@@ -154,9 +154,7 @@ function visual() {
     function onSlide() {
         dotNum = dot.index($(this));
         nextVs(dotNum, dura);
-        nextBtn(dotNum)
-        autoStop();
-        autoPlay();
+        nextBtn(dotNum);
     }
 
     autoPlay();
@@ -170,9 +168,11 @@ function visual() {
         if (dotNum >= imgNum) {
             nextVs(-1, 0);
             dotNum = 0;
+        } else {
+            nextVs(dotNum, dura);
+            nextBtn(dotNum);
         }
-        nextVs(dotNum, dura);
-        nextBtn(dotNum);
+
     }
 
     function nextVs(dotNum, dura) {

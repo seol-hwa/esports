@@ -584,8 +584,7 @@ aside .visited-box .visited-game:hover {
 }
 aside .visited-box .visited-game img {
   width: 100%;
-  -o-object-position: center center;
-     object-position: center center;
+  object-position: center center;
 }
 aside .top-btn {
   display: flex;
@@ -798,7 +797,6 @@ aside .top-btn:hover .text {
 }
 .inner .result-container {
   margin-bottom: 120px;
-  display: none;
 }
 .inner .result-container .calendar-wrap .year-wrap {
   display: flex;
@@ -885,42 +883,42 @@ aside .top-btn:hover .text {
 .inner .result-container .calendar-wrap .month-wrap .month-mo-wrap .month-mo-list li.on a {
   color: #E3002B;
 }
-.inner .result-container .mon {
+.inner .result-container .result-wrap .mon {
   display: none;
 }
-.inner .result-container .mon .game-date .date-box {
+.inner .result-container .result-wrap .mon .game-date .date-box {
   border-bottom: 1px solid #d9d9d9;
   background: #fff0f0;
   padding: 10px 26px;
   display: flex;
   justify-content: space-between;
 }
-.inner .result-container .mon .game-date .date-box .date {
+.inner .result-container .result-wrap .mon .game-date .date-box .date {
   color: #222;
   font-size: 20px;
 }
-.inner .result-container .mon .game-date .date-box .place {
+.inner .result-container .result-wrap .mon .game-date .date-box .place {
   color: #666;
   display: none;
 }
-.inner .result-container .mon .game-date .game-info {
+.inner .result-container .result-wrap .mon .game-date .game-info {
   border-bottom: 1px solid #d9d9d9;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4px 0;
 }
-.inner .result-container .mon .game-date .game-info .left {
+.inner .result-container .result-wrap .mon .game-date .game-info .left {
   display: flex;
   align-items: center;
   margin-left: 26px;
 }
-.inner .result-container .mon .game-date .game-info .left .time {
+.inner .result-container .result-wrap .mon .game-date .game-info .left .time {
   font-size: 18px;
   color: #222;
   padding-right: 60px;
 }
-.inner .result-container .mon .game-date .game-info .left .time:after {
+.inner .result-container .result-wrap .mon .game-date .game-info .left .time:after {
   content: "종료";
   display: inline-block;
   padding: 4px;
@@ -930,19 +928,19 @@ aside .top-btn:hover .text {
   font-size: 14px;
   margin-left: 10px;
 }
-.inner .result-container .mon .game-date .game-info .left .round {
+.inner .result-container .result-wrap .mon .game-date .game-info .left .round {
   font-size: 16px;
   color: #666;
 }
-.inner .result-container .mon .game-date .game-info .center {
+.inner .result-container .result-wrap .mon .game-date .game-info .center {
   display: flex;
   align-items: center;
 }
-.inner .result-container .mon .game-date .game-info .center .home {
+.inner .result-container .result-wrap .mon .game-date .game-info .center .home {
   display: flex;
   align-items: center;
 }
-.inner .result-container .mon .game-date .game-info .center .home .team {
+.inner .result-container .result-wrap .mon .game-date .game-info .center .home .team {
   color: #222;
   font-size: 18px;
   width: 200px;
@@ -952,19 +950,19 @@ aside .top-btn:hover .text {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.inner .result-container .mon .game-date .game-info .center .home .score {
+.inner .result-container .result-wrap .mon .game-date .game-info .center .home .score {
   font-size: 24px;
   color: #999;
 }
-.inner .result-container .mon .game-date .game-info .center .vs {
+.inner .result-container .result-wrap .mon .game-date .game-info .center .vs {
   color: #d9d9d9;
   margin: 0 10px;
 }
-.inner .result-container .mon .game-date .game-info .center .away {
+.inner .result-container .result-wrap .mon .game-date .game-info .center .away {
   display: flex;
   align-items: center;
 }
-.inner .result-container .mon .game-date .game-info .center .away .team {
+.inner .result-container .result-wrap .mon .game-date .game-info .center .away .team {
   color: #222;
   font-size: 18px;
   margin-left: 14px;
@@ -973,16 +971,16 @@ aside .top-btn:hover .text {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.inner .result-container .mon .game-date .game-info .center .away .score {
+.inner .result-container .result-wrap .mon .game-date .game-info .center .away .score {
   font-size: 24px;
   color: #999;
 }
-.inner .result-container .mon .game-date .game-info .right {
+.inner .result-container .result-wrap .mon .game-date .game-info .right {
   display: flex;
   align-items: center;
   margin-right: 26px;
 }
-.inner .result-container .mon .game-date .game-info .right .replay {
+.inner .result-container .result-wrap .mon .game-date .game-info .right .replay {
   color: #555;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
@@ -990,15 +988,16 @@ aside .top-btn:hover .text {
   padding: 6px;
   margin-right: 50px;
 }
-.inner .result-container .mon .game-date .game-info .right .replay:hover {
+.inner .result-container .result-wrap .mon .game-date .game-info .right .replay:hover {
   border-color: #333;
 }
-.inner .result-container .mon .game-date .game-info .right .place {
+.inner .result-container .result-wrap .mon .game-date .game-info .right .place {
   color: #666;
   text-align: center;
 }
 .inner .rank-container {
   margin-bottom: 120px;
+  display: none;
 }
 .inner .rank-container .title-wrap {
   display: flex;
