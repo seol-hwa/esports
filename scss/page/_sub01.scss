@@ -14,12 +14,9 @@
                 padding-left: 16px;
                 display: flex;
 
-                &.on {
-                    color: $titleColor;
-                }
-
                 &:first-child {
                     padding-left: 0;
+                    color: $titleColor;
                 }
 
                 &:after {
@@ -33,6 +30,10 @@
 
                 &:last-child:after {
                     display: none;
+                }
+
+                &:hover{
+                    color: #666;
                 }
             }
         }
@@ -149,21 +150,10 @@
                 .year-box {
                     width: 150px;
                     height: 50px;
-                    overflow: hidden;
-                    position: relative;
-
-                    .year-list {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        display: flex;
-                        width: 1500px;
-
-                        li {
-                            font-size: 50px;
-                            width: 150px;
-                            text-align: center;
-                        }
+                    .this-year{
+                        text-align: center;
+                        font-size: 50px;
+                        line-height: 0.8;
                     }
                 }
             }
@@ -207,6 +197,7 @@
                         color: $subTextColor;
                         position: absolute;
                         top: 2px;
+                        z-index:1;
                     }
 
                     .month-prev {
@@ -246,7 +237,6 @@
 
         .result-wrap {
             .mon {
-
                 display: none;
 
                 .game-date {
@@ -675,13 +665,9 @@
                             }
 
                             .year-box {
-                                height: 30px;
-
-                                .year-list {
-                                    li {
-                                        font-size: 30px;
-                                        line-height: 25px;
-                                    }
+                                height: 40px;
+                                .this-year{
+                                    font-size: 40px;
                                 }
                             }
                         }

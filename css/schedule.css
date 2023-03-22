@@ -708,11 +708,9 @@ aside .top-btn:hover .text {
   padding-left: 16px;
   display: flex;
 }
-.inner .select-box .large-scale a.on {
-  color: #222;
-}
 .inner .select-box .large-scale a:first-child {
   padding-left: 0;
+  color: #222;
 }
 .inner .select-box .large-scale a:after {
   content: "";
@@ -724,6 +722,9 @@ aside .top-btn:hover .text {
 }
 .inner .select-box .large-scale a:last-child:after {
   display: none;
+}
+.inner .select-box .large-scale a:hover {
+  color: #666;
 }
 .inner .select-box .middle-scale {
   margin-bottom: 30px;
@@ -813,20 +814,11 @@ aside .top-btn:hover .text {
 .inner .result-container .calendar-wrap .year-wrap .year-box {
   width: 150px;
   height: 50px;
-  overflow: hidden;
-  position: relative;
 }
-.inner .result-container .calendar-wrap .year-wrap .year-box .year-list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  width: 1500px;
-}
-.inner .result-container .calendar-wrap .year-wrap .year-box .year-list li {
-  font-size: 50px;
-  width: 150px;
+.inner .result-container .calendar-wrap .year-wrap .year-box .this-year {
   text-align: center;
+  font-size: 50px;
+  line-height: 0.8;
 }
 .inner .result-container .calendar-wrap .month-wrap {
   border-top: 1px solid #d9d9d9;
@@ -859,6 +851,7 @@ aside .top-btn:hover .text {
   color: #444;
   position: absolute;
   top: 2px;
+  z-index: 1;
 }
 .inner .result-container .calendar-wrap .month-wrap .month-mo-wrap .month-prev {
   background-image: linear-gradient(to right, #fff 60%, transparent);
@@ -1216,12 +1209,11 @@ aside .top-btn:hover .text {
   }
   body .sub01 .inner section .calendar-wrap .year-wrap .year-box,
   html .sub01 .inner section .calendar-wrap .year-wrap .year-box {
-    height: 30px;
+    height: 40px;
   }
-  body .sub01 .inner section .calendar-wrap .year-wrap .year-box .year-list li,
-  html .sub01 .inner section .calendar-wrap .year-wrap .year-box .year-list li {
-    font-size: 30px;
-    line-height: 25px;
+  body .sub01 .inner section .calendar-wrap .year-wrap .year-box .this-year,
+  html .sub01 .inner section .calendar-wrap .year-wrap .year-box .this-year {
+    font-size: 40px;
   }
   body .sub01 .inner section .calendar-wrap .month-wrap .month-pc,
   html .sub01 .inner section .calendar-wrap .month-wrap .month-pc {

@@ -109,27 +109,23 @@ function nav() {
     }
 }
 function main() {
-    var firstTitle = $('.large-scale').children();
     var secondTitle = $('.middle-scale').children();
     var thirdTitle = $('.small-scale').find('a');
     var setNum = 0;
     var gameBox = $('.game-box');
-    var yearList = $('.year-list');
-    var yearWidth = yearList.children().innerWidth();
-    var yearSize = yearList.children().size();
     var nextYear = $('.next');
     var prevYear = $('.prev');
-    var yearNum = 0;
+    var monthList = $('.month-mo-list');
+    var prevMonth = $('.month-prev');
+    var nextMonth = $('.month-next');
+    var dura = 300;
+    var toYear = new Date().getFullYear();
+    var monthPc = $('.month-pc').find('a');
+    var monthMo = monthList.find('a');
 
-    firstTitle.eq(setNum).addClass('on');
     secondTitle.eq(setNum).addClass('on');
     thirdTitle.eq(setNum).addClass('on');
-    yearList.css({ Width: yearWidth * yearSize });
-
-    firstTitle.on('click', function () {
-        firstTitle.removeClass('on');
-        $(this).addClass('on');
-    })
+    $('.this-year').text(toYear);
 
     secondTitle.on('click', function () {
         setNum = $(this).index();
@@ -154,20 +150,45 @@ function main() {
     })
 
     nextYear.on('click', function () {
-        yearNum++;
-        yearList.stop().animate({ left: -yearWidth * yearNum }, 0);
-        if (yearList.position().left <= -1350) {
-            yearNum = yearSize-1;
-            yearList.stop().animate({ left: -yearWidth * yearNum }, 0);
+        toYear++;
+        $('.this-year').text(toYear);
+    })
+    prevYear.on('click', function () {
+        toYear--;
+        $('.this-year').text(toYear);
+    })
+
+    nextMonth.on('click', function () {
+        var monthLeft = monthList.position().left;
+        if($(window).innerWidth() <= 555){
+            if(monthLeft <= -650){
+                monthList.stop().animate({ left: monthLeft - 0 }, dura);
+            }else{
+                monthList.stop().animate({ left: monthLeft - 100 }, dura);
+            }
+        }else{
+            if (monthLeft <= -350) {
+                monthList.stop().animate({ left: monthLeft - 0 }, dura);
+            } else {
+                monthList.stop().animate({ left: monthLeft - 100 }, dura);
+            }
         }
     })
-    prevYear.on('click',function(){
-        yearNum--;
-        yearList.stop().animate({ left: -yearWidth * yearNum }, 0);
-        if (yearList.position().left >= 0) {
-            yearNum = 0;
-            yearList.stop().animate({ left: -yearWidth * yearNum }, 0);
+    prevMonth.on('click', function () {
+        var monthLeft = monthList.position().left;
+        if (monthLeft >= 50) {
+            monthList.stop().animate({ left: monthLeft + 0 }, dura);
+        } else {
+            monthList.stop().animate({ left: monthLeft + 100 }, dura);
         }
+    })
+    monthPc.on('click', function () {
+        monthPc.parent().removeClass('on');
+        $(this).parent().addClass('on');
+    })
+    monthMo.on('click', function () {
+        monthMo.parent().removeClass('on');
+        $(this).parent().addClass('on');
     })
 }
 function footer() {
