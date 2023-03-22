@@ -9,8 +9,8 @@ $(document).ready(function () {
 
 function lang() {
     //header top
-    var kor = $('.lang_ko');
-    var eng = $('.lang-box_en');
+    const kor = $('.lang_ko');
+    const eng = $('.lang-box_en');
     kor.parent().each(function (i, d) {
         $(this).data('isOpen', true);
     })
@@ -27,13 +27,13 @@ function lang() {
     })
 }
 function mobMenu() {
-    var menuCon = $('.all-menu-wrap');
-    var open = $('.all-menu-btn');
-    var close = $('.all-menu-close');
-    var isOpen = false;
-    var menu = $('.mo-menu-list > li > a');
-    var subMenu = $('.mo-submenu-list');
-    var dura = 300;
+    const menuCon = $('.all-menu-wrap');
+    const open = $('.all-menu-btn');
+    const close = $('.all-menu-close');
+    let isOpen = false;
+    const menu = $('.mo-menu-list > li > a');
+    const subMenu = $('.mo-submenu-list');
+    const dura = 300;
 
     menu.each(function () {
         $(this).data('opCheck', false);
@@ -82,10 +82,10 @@ function mobMenu() {
     })
 }
 function nav() {
-    var main = $('.gnb-list > li > a');
-    var sub = $('.submenu-list');
-    var hbCon = $('.h-bottom-container');
-    var dura = 200;
+    const main = $('.gnb-list > li > a');
+    const sub = $('.submenu-list');
+    const hbCon = $('.h-bottom-container');
+    const dura = 200;
 
     sub.css({ top: hbCon.outerHeight() - 1, width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left });
 
@@ -109,19 +109,19 @@ function nav() {
     }
 }
 function main() {
-    var secondTitle = $('.middle-scale').children();
-    var thirdTitle = $('.small-scale').find('a');
-    var setNum = 0;
-    var gameBox = $('.game-box');
-    var nextYear = $('.next');
-    var prevYear = $('.prev');
-    var monthList = $('.month-mo-list');
-    var prevMonth = $('.month-prev');
-    var nextMonth = $('.month-next');
-    var dura = 300;
-    var toYear = new Date().getFullYear();
-    var monthPc = $('.month-pc').find('a');
-    var monthMo = monthList.find('a');
+    const secondTitle = $('.middle-scale').children();
+    const thirdTitle = $('.small-scale').find('a');
+    let setNum = 0;
+    const gameBox = $('.game-box');
+    const nextYear = $('.next');
+    const prevYear = $('.prev');
+    const monthList = $('.month-mo-list');
+    const prevMonth = $('.month-prev');
+    const nextMonth = $('.month-next');
+    const dura = 300;
+    let toYear = new Date().getFullYear();
+    const monthPc = $('.month-pc').find('a');
+    const monthMo = monthList.find('a');
 
     secondTitle.eq(setNum).addClass('on');
     thirdTitle.eq(setNum).addClass('on');
@@ -159,7 +159,7 @@ function main() {
     })
 
     nextMonth.on('click', function () {
-        var monthLeft = monthList.position().left;
+        let monthLeft = monthList.position().left;
         if($(window).innerWidth() <= 555){
             if(monthLeft <= -650){
                 monthList.stop().animate({ left: monthLeft - 0 }, dura);
@@ -175,7 +175,7 @@ function main() {
         }
     })
     prevMonth.on('click', function () {
-        var monthLeft = monthList.position().left;
+        let monthLeft = monthList.position().left;
         if (monthLeft >= 50) {
             monthList.stop().animate({ left: monthLeft + 0 }, dura);
         } else {
@@ -192,8 +192,8 @@ function main() {
     })
 }
 function footer() {
-    var infoBtn = $('.f-info-btn').children();
-    var time = 500;
+    const infoBtn = $('.f-info-btn').children();
+    const time = 500;
 
     infoBtn.each(function () {
         $(this).data('isOn', true);
@@ -216,14 +216,14 @@ function footer() {
     })
 }
 function quick() {
-    var qMenu = $('aside');
-    var top = $('.top-btn');
-    var dura = 200;
+    const qMenu = $('aside');
+    const top = $('.top-btn');
+    const dura = 200;
 
     qMenu.hide();
 
     $(document).on('scroll', function () {
-        var scrollH = $(window).scrollTop();
+        let scrollH = $(window).scrollTop();
         if (scrollH >= $(window).innerHeight() / 3) {
             qMenu.show().stop().animate({ opacity: 1 }, dura);
         } else {

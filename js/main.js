@@ -13,7 +13,7 @@ $(document).ready(function () {
 })
 
 function skip() {
-    var skipMenu = $('.skip-menu').find('a');
+    const skipMenu = $('.skip-menu').find('a');
     skipMenu.on('click', function () {
         var add = $(this.hash).offset().top;
 
@@ -23,8 +23,8 @@ function skip() {
 }
 function lang() {
     //header top
-    var kor = $('.lang_ko');
-    var eng = $('.lang-box_en');
+    const kor = $('.lang_ko');
+    const eng = $('.lang-box_en');
     kor.parent().each(function (i, d) {
         $(this).data('isOpen', true);
     })
@@ -41,13 +41,13 @@ function lang() {
     })
 }
 function mobMenu() {
-    var menuCon = $('.all-menu-wrap');
-    var open = $('.all-menu-btn');
-    var close = $('.all-menu-close');
-    var isOpen = false;
-    var menu = $('.mo-menu-list > li > a');
-    var subMenu = $('.mo-submenu-list');
-    var dura = 300;
+    const menuCon = $('.all-menu-wrap');
+    const open = $('.all-menu-btn');
+    const close = $('.all-menu-close');
+    let isOpen = false;
+    const menu = $('.mo-menu-list > li > a');
+    const subMenu = $('.mo-submenu-list');
+    const dura = 300;
 
     menu.each(function () {
         $(this).data('opCheck', false);
@@ -96,10 +96,10 @@ function mobMenu() {
     })
 }
 function nav() {
-    var main = $('.gnb-list > li > a');
-    var sub = $('.submenu-list');
-    var hbCon = $('.h-bottom-container');
-    var dura = 200;
+    const main = $('.gnb-list > li > a');
+    const sub = $('.submenu-list');
+    const hbCon = $('.h-bottom-container');
+    const dura = 200;
 
     sub.css({ top: hbCon.outerHeight() - 1, width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left });
 
@@ -123,16 +123,16 @@ function nav() {
     }
 }
 function visual() {
-    var con = $('.visual-container');
-    var imgList = $('.img-list');
-    var dot = $('.dot-list').children();
-    var imgNum = imgList.children().size();
-    var imgWidth = con.innerWidth();
-    var dotNum = 0;
-    var timer;
-    var delay = 5000;
-    var dura = 300;
-    var clone = imgList.children().last().clone();
+    const con = $('.visual-container');
+    const imgList = $('.img-list');
+    const dot = $('.dot-list').children();
+    const imgNum = imgList.children().size();
+    const imgWidth = con.innerWidth();
+    let dotNum = 0;
+    let timer;
+    const delay = 5000;
+    const dura = 300;
+    const clone = imgList.children().last().clone();
     imgList.prepend(clone);
 
     imgList.children().css({ width: con.innerWidth() });
@@ -189,13 +189,13 @@ function visual() {
     }
 }
 function calendar() {
-    var newDate = new Date();
-    var today = ('0' + newDate.getDate()).slice(-2);
-    var prev = $('.tbody-prev');
-    var next = $('.tbody-next');
-    var dist = 100;
-    var dura = 300;
-    var timer;
+    const newDate = new Date();
+    const today = ('0' + newDate.getDate()).slice(-2);
+    const prev = $('.tbody-prev');
+    const next = $('.tbody-next');
+    const dist = 100;
+    const dura = 300;
+    let timer;
 
 
     $('.schedule-game').css({ 'display': 'none' })
@@ -210,15 +210,15 @@ function calendar() {
 
 
         onSelect: function (dateString) {
-            var arr = dateString.split("/");
-            var dayNum = arr[1];
+            const arr = dateString.split("/");
+            const dayNum = arr[1];
             $('.schedule-game').css({ display: 'none' });
             $('.schedule-game.d' + dayNum + '').css({ display: 'flex' });
         }
 
     })
 
-    var dateTd = $('.ui-datepicker-today').outerWidth(true) + 20;
+    const dateTd = $('.ui-datepicker-today').outerWidth(true) + 20;
 
     if (window.matchMedia('(max-width:768px)').matches == true) {
         startP();
@@ -241,16 +241,16 @@ function calendar() {
     }
 
     function startP() {
-        var winW = $(window).innerWidth();
-        var weekItem = $('tbody').find('.ui-datepicker-today').parent().index() * 7;
-        var dateItem = $('tbody').find('.ui-datepicker-today').index() - 1;
+        let winW = $(window).innerWidth();
+        const weekItem = $('tbody').find('.ui-datepicker-today').parent().index() * 7;
+        const dateItem = $('tbody').find('.ui-datepicker-today').index() - 1;
 
         $('tbody').css({ left: -(dateTd * (weekItem + dateItem)) + winW / 2 });
     }
 
 
     next.on('click', function () {
-        var tBodyP = $('tbody').position().left;
+        let tBodyP = $('tbody').position().left;
         if ($(window).innerWidth() > 655) {
             if (tBodyP <= -1400) {
                 moveRight(tBodyP, 0, 0);
@@ -273,7 +273,7 @@ function calendar() {
         }
     })
     prev.on('click', function () {
-        var tBodyP = $('tbody').position().left;
+        let tBodyP = $('tbody').position().left;
         if (tBodyP >= 0) {
             moveLeft(tBodyP, 0, 0);
         } else {
@@ -292,10 +292,10 @@ function calendar() {
     }
 }
 function team() {
-    var btn = $('.league-box').find('a');
-    var list = $('.team-box > li');
-    var teamI = 0;
-    var dura = 300;
+    const btn = $('.league-box').find('a');
+    const list = $('.team-box > li');
+    let teamI = 0;
+    const dura = 300;
 
     list.css({ display: 'none', opacity: 0 });
     list.eq(teamI).css({ display: 'block' }).animate({ opacity: 1 }, dura);
@@ -317,11 +317,11 @@ function stadium() {
     $(window).on('resize', function () {
         $('.stadium-wrap').css({ height: list.find('a').innerHeight() });
     })
-    var delay = 10;
-    var moveX = 1;
-    var timer;
-    var list = $('.stadium-list');
-    var itemWidth = list.children().outerWidth(true);
+    const delay = 10;
+    const moveX = 1;
+    let timer;
+    const list = $('.stadium-list');
+    const itemWidth = list.children().outerWidth(true);
 
     $('.stadium-wrap').css({ height: list.find('a').innerHeight() });
 
@@ -333,7 +333,7 @@ function stadium() {
         timer = setInterval(onFlow, delay);
     }
     function onFlow() {
-        var listLeft = list.position().left;
+        let listLeft = list.position().left;
         list.css({ left: listLeft - moveX });
         if (listLeft <= -itemWidth) {
             list.children().first().appendTo(list);
@@ -345,8 +345,8 @@ function stadium() {
     }
 }
 function footer() {
-    var infoBtn = $('.f-info-btn').children();
-    var time = 500;
+    const infoBtn = $('.f-info-btn').children();
+    const time = 500;
 
     infoBtn.each(function () {
         $(this).data('isOn', true);
@@ -369,9 +369,9 @@ function footer() {
     })
 }
 function quick() {
-    var qMenu = $('aside');
-    var top = $('.top-btn');
-    var dura = 200;
+    const qMenu = $('aside');
+    const top = $('.top-btn');
+    const dura = 200;
 
     qMenu.hide();
 
