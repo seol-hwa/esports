@@ -221,7 +221,7 @@ header {
 
                     .submenu-list {
                         position: absolute;
-                        top: 0;
+                        top: 56px;
                         left: 0;
                         background: $backgroundColor;
                         width: 100%;
@@ -231,13 +231,12 @@ header {
                         border-bottom: 1px solid $borderColor;
 
                         li {
-                            padding: 20px 0;
 
                             a {
+                                display: block;
                                 font-size: 16px;
                                 color: $subTextColor;
-                                padding: 10px;
-
+                                padding: 20px 10px;
                                 &:hover {
                                     color: $logoColor;
                                 }
@@ -343,10 +342,11 @@ header {
                             }
 
                             .submenu-list {
+                                top:48px;
                                 li {
-                                    padding: 16px 0;
 
                                     a {
+                                        padding:16px 10px;
                                         font-size: 14px;
                                     }
                                 }

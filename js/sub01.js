@@ -87,11 +87,11 @@ function nav() {
     const hbCon = $('.h-bottom-container');
     const dura = 200;
 
-    sub.css({ top: hbCon.outerHeight() - 1, width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left });
+    sub.css({width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left });
 
     //resize
     $(window).on('resize', function () {
-        sub.css({ top: $('.h-bottom-container').outerHeight() - 1, width: $('.h-bottom-container').innerWidth(), paddingLeft: $('.h-bottom-container').children('.inner').offset().left });
+        sub.css({ top: hbCon.outerHeight()-1, width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left })
     })
 
 
@@ -122,10 +122,16 @@ function main() {
     let toYear = new Date().getFullYear();
     const monthPc = $('.month-pc').find('a');
     const monthMo = monthList.find('a');
+    const todayMonth = new Date().getMonth();
+    const pcMonthList = $('.month-pc').children();
+    const moMonthList=$('.month-mo-list').children();
 
     secondTitle.eq(setNum).addClass('on');
     thirdTitle.eq(setNum).addClass('on');
     $('.this-year').text(toYear);
+    pcMonthList.eq(todayMonth).addClass('on');
+    moMonthList.eq(todayMonth).addClass('on');
+
 
     secondTitle.on('click', function () {
         setNum = $(this).index();
@@ -190,6 +196,8 @@ function main() {
         monthMo.parent().removeClass('on');
         $(this).parent().addClass('on');
     })
+
+
 }
 function footer() {
     const infoBtn = $('.f-info-btn').children();

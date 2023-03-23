@@ -290,7 +290,7 @@ header .h-bottom-container .inner .gnb-list > li > a:after {
 }
 header .h-bottom-container .inner .gnb-list > li .submenu-list {
   position: absolute;
-  top: 0;
+  top: 56px;
   left: 0;
   background: #fff;
   width: 100%;
@@ -299,13 +299,11 @@ header .h-bottom-container .inner .gnb-list > li .submenu-list {
   display: flex;
   border-bottom: 1px solid #d9d9d9;
 }
-header .h-bottom-container .inner .gnb-list > li .submenu-list li {
-  padding: 20px 0;
-}
 header .h-bottom-container .inner .gnb-list > li .submenu-list li a {
+  display: block;
   font-size: 16px;
   color: #444;
-  padding: 10px;
+  padding: 20px 10px;
 }
 header .h-bottom-container .inner .gnb-list > li .submenu-list li a:hover {
   color: #E3002B;
@@ -374,10 +372,11 @@ header .h-bottom-container .inner .search-box .search-btn .bx-search {
   body header .h-bottom-container .inner .gnb-list > li > a:after, html header .h-bottom-container .inner .gnb-list > li > a:after {
     margin-left: 20px;
   }
-  body header .h-bottom-container .inner .gnb-list > li .submenu-list li, html header .h-bottom-container .inner .gnb-list > li .submenu-list li {
-    padding: 16px 0;
+  body header .h-bottom-container .inner .gnb-list > li .submenu-list, html header .h-bottom-container .inner .gnb-list > li .submenu-list {
+    top: 48px;
   }
   body header .h-bottom-container .inner .gnb-list > li .submenu-list li a, html header .h-bottom-container .inner .gnb-list > li .submenu-list li a {
+    padding: 16px 10px;
     font-size: 14px;
   }
   body header .h-bottom-container .inner .search-box input, html header .h-bottom-container .inner .search-box input {

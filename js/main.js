@@ -101,13 +101,12 @@ function nav() {
     const hbCon = $('.h-bottom-container');
     const dura = 200;
 
-    sub.css({ top: hbCon.outerHeight() - 1, width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left });
+    sub.css({width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left });
 
     //resize
     $(window).on('resize', function () {
-        sub.css({ top: $('.h-bottom-container').outerHeight() - 1, width: $('.h-bottom-container').innerWidth(), paddingLeft: $('.h-bottom-container').children('.inner').offset().left });
+        sub.css({ top: hbCon.outerHeight()-1, width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left });
     })
-
 
     onOut();
 
@@ -127,7 +126,7 @@ function visual() {
     const imgList = $('.img-list');
     const dot = $('.dot-list').children();
     const imgNum = imgList.children().size();
-    const imgWidth = con.innerWidth();
+    let imgWidth = con.innerWidth();
     let dotNum = 0;
     let timer;
     const delay = 5000;

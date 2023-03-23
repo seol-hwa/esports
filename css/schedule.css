@@ -291,7 +291,7 @@ header .h-bottom-container .inner .gnb-list > li > a:after {
 }
 header .h-bottom-container .inner .gnb-list > li .submenu-list {
   position: absolute;
-  top: 0;
+  top: 56px;
   left: 0;
   background: #fff;
   width: 100%;
@@ -300,13 +300,11 @@ header .h-bottom-container .inner .gnb-list > li .submenu-list {
   display: flex;
   border-bottom: 1px solid #d9d9d9;
 }
-header .h-bottom-container .inner .gnb-list > li .submenu-list li {
-  padding: 20px 0;
-}
 header .h-bottom-container .inner .gnb-list > li .submenu-list li a {
+  display: block;
   font-size: 16px;
   color: #444;
-  padding: 10px;
+  padding: 20px 10px;
 }
 header .h-bottom-container .inner .gnb-list > li .submenu-list li a:hover {
   color: #E3002B;
@@ -375,10 +373,11 @@ header .h-bottom-container .inner .search-box .search-btn .bx-search {
   body header .h-bottom-container .inner .gnb-list > li > a:after, html header .h-bottom-container .inner .gnb-list > li > a:after {
     margin-left: 20px;
   }
-  body header .h-bottom-container .inner .gnb-list > li .submenu-list li, html header .h-bottom-container .inner .gnb-list > li .submenu-list li {
-    padding: 16px 0;
+  body header .h-bottom-container .inner .gnb-list > li .submenu-list, html header .h-bottom-container .inner .gnb-list > li .submenu-list {
+    top: 48px;
   }
   body header .h-bottom-container .inner .gnb-list > li .submenu-list li a, html header .h-bottom-container .inner .gnb-list > li .submenu-list li a {
+    padding: 16px 10px;
     font-size: 14px;
   }
   body header .h-bottom-container .inner .search-box input, html header .h-bottom-container .inner .search-box input {
@@ -876,6 +875,14 @@ aside .top-btn:hover .text {
 .inner .result-container .calendar-wrap .month-wrap .month-mo-wrap .month-mo-list li.on a {
   color: #E3002B;
 }
+.inner .result-container .result-wrap .none-play {
+  font-size: 30px;
+  font-weight: bold;
+  color: #999;
+  text-align: center;
+  margin-top: 30px;
+  display: none;
+}
 .inner .result-container .result-wrap .mon {
   display: none;
 }
@@ -988,94 +995,6 @@ aside .top-btn:hover .text {
   color: #666;
   text-align: center;
 }
-.inner .rank-container {
-  margin-bottom: 120px;
-  display: none;
-}
-.inner .rank-container .title-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  margin-bottom: 30px;
-}
-.inner .rank-container .title-wrap .league-title {
-  font-size: 30px;
-}
-.inner .rank-container .title-wrap .choice-box {
-  width: 300px;
-  font-size: 18px;
-  padding: 5px 10px;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-.inner .rank-container .lck-rank li {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #d9d9d9;
-  box-sizing: border-box;
-  align-items: center;
-}
-.inner .rank-container .lck-rank .list-head {
-  border-top: 1px solid #d9d9d9;
-  height: 50px;
-  background: #FFF0F0;
-  padding: 0 20px;
-}
-.inner .rank-container .lck-rank .list-head .left span {
-  font-size: 20px;
-  color: #444;
-}
-.inner .rank-container .lck-rank .list-head .right span {
-  font-size: 20px;
-  color: #444;
-}
-.inner .rank-container .lck-rank .list-head .right .lose,
-.inner .rank-container .lck-rank .list-head .right .interval {
-  margin: 0 0 0 140px;
-}
-.inner .rank-container .lck-rank .list-body {
-  height: 60px;
-  padding: 0 30px 0 25px;
-}
-.inner .rank-container .lck-rank .list-body .left {
-  display: flex;
-  align-items: center;
-}
-.inner .rank-container .lck-rank .list-body .left .total-rank {
-  display: flex;
-  width: 30px;
-  justify-content: center;
-  margin-right: 60px;
-  font-size: 30px;
-  color: #222;
-}
-.inner .rank-container .lck-rank .list-body .left img {
-  width: 40px;
-  margin-right: 30px;
-}
-.inner .rank-container .lck-rank .list-body .left .team {
-  font-size: 18px;
-  color: #222;
-}
-.inner .rank-container .lck-rank .list-body .right {
-  display: flex;
-}
-.inner .rank-container .lck-rank .list-body .right .win,
-.inner .rank-container .lck-rank .list-body .right .lose,
-.inner .rank-container .lck-rank .list-body .right .interval {
-  font-size: 18px;
-  color: #222;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-}
-.inner .rank-container .lck-rank .list-body .right .interval {
-  margin-left: 150px;
-}
-.inner .rank-container .lck-rank .list-body .right .lose {
-  margin-left: 136px;
-}
 
 @media (max-width: 1300px) {
   body .sub01 .inner,
@@ -1088,12 +1007,12 @@ aside .top-btn:hover .text {
   html .sub01 .inner .select-box {
     margin-top: 129px;
   }
-  body .sub01 .inner section .mon .game-date .game-info .left .time,
-  html .sub01 .inner section .mon .game-date .game-info .left .time {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .left .time,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .left .time {
     padding-right: 30px;
   }
-  body .sub01 .inner section .mon .game-date .game-info .right .replay,
-  html .sub01 .inner section .mon .game-date .game-info .right .replay {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .right .replay,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .right .replay {
     font-size: 14px;
     margin-right: 10px;
   }
@@ -1125,47 +1044,33 @@ aside .top-btn:hover .text {
     width: 58px;
     height: 58px;
   }
-  body .sub01 .inner section .mon .game-date .date-box .place,
-  html .sub01 .inner section .mon .game-date .date-box .place {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .date-box .place,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .date-box .place {
     display: block;
   }
-  body .sub01 .inner section .mon .game-date .game-info,
-  html .sub01 .inner section .mon .game-date .game-info {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info {
     flex-direction: column;
     align-items: start;
   }
-  body .sub01 .inner section .mon .game-date .game-info .left,
-  html .sub01 .inner section .mon .game-date .game-info .left {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .left,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .left {
     padding: 10px 0;
   }
-  body .sub01 .inner section .mon .game-date .game-info .center,
-  html .sub01 .inner section .mon .game-date .game-info .center {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center {
     padding: 10px 0;
     margin: 0 auto;
   }
-  body .sub01 .inner section .mon .game-date .game-info .center .home .team,
-  body .sub01 .inner section .mon .game-date .game-info .center .away .team,
-  html .sub01 .inner section .mon .game-date .game-info .center .home .team,
-  html .sub01 .inner section .mon .game-date .game-info .center .away .team {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .home .team,
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .away .team,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .home .team,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .away .team {
     width: 300px;
   }
-  body .sub01 .inner section .mon .game-date .game-info .right,
-  html .sub01 .inner section .mon .game-date .game-info .right {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .right,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .right {
     display: none;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-head .right .lose,
-  body .sub01 .inner .rank-container .lck-rank .list-head .right .interval,
-  html .sub01 .inner .rank-container .lck-rank .list-head .right .lose,
-  html .sub01 .inner .rank-container .lck-rank .list-head .right .interval {
-    margin-left: 100px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-body .right .interval,
-  html .sub01 .inner .rank-container .lck-rank .list-body .right .interval {
-    margin-left: 110px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-body .right .lose,
-  html .sub01 .inner .rank-container .lck-rank .list-body .right .lose {
-    margin-left: 96px;
   }
 }
 @media (max-width: 768px) {
@@ -1203,131 +1108,66 @@ aside .top-btn:hover .text {
   html .sub01 .inner .select-box .small-scale .game-box {
     gap: 20px;
   }
-  body .sub01 .inner section .calendar-wrap .year-wrap button,
-  html .sub01 .inner section .calendar-wrap .year-wrap button {
+  body .sub01 .inner .result-container .calendar-wrap .year-wrap button,
+  html .sub01 .inner .result-container .calendar-wrap .year-wrap button {
     font-size: 30px;
   }
-  body .sub01 .inner section .calendar-wrap .year-wrap .year-box,
-  html .sub01 .inner section .calendar-wrap .year-wrap .year-box {
+  body .sub01 .inner .result-container .calendar-wrap .year-wrap .year-box,
+  html .sub01 .inner .result-container .calendar-wrap .year-wrap .year-box {
     height: 40px;
   }
-  body .sub01 .inner section .calendar-wrap .year-wrap .year-box .this-year,
-  html .sub01 .inner section .calendar-wrap .year-wrap .year-box .this-year {
+  body .sub01 .inner .result-container .calendar-wrap .year-wrap .year-box .this-year,
+  html .sub01 .inner .result-container .calendar-wrap .year-wrap .year-box .this-year {
     font-size: 40px;
   }
-  body .sub01 .inner section .calendar-wrap .month-wrap .month-pc,
-  html .sub01 .inner section .calendar-wrap .month-wrap .month-pc {
+  body .sub01 .inner .result-container .calendar-wrap .month-wrap .month-pc,
+  html .sub01 .inner .result-container .calendar-wrap .month-wrap .month-pc {
     display: none;
   }
-  body .sub01 .inner section .calendar-wrap .month-wrap .month-mo-wrap,
-  html .sub01 .inner section .calendar-wrap .month-wrap .month-mo-wrap {
+  body .sub01 .inner .result-container .calendar-wrap .month-wrap .month-mo-wrap,
+  html .sub01 .inner .result-container .calendar-wrap .month-wrap .month-mo-wrap {
     display: flex;
   }
-  body .sub01 .inner section .mon .game-date .game-info .left .time,
-  html .sub01 .inner section .mon .game-date .game-info .left .time {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .left .time,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .left .time {
     padding-right: 10px;
   }
-  body .sub01 .inner section .mon .game-date .game-info .center .home .team,
-  body .sub01 .inner section .mon .game-date .game-info .center .away .team,
-  html .sub01 .inner section .mon .game-date .game-info .center .home .team,
-  html .sub01 .inner section .mon .game-date .game-info .center .away .team {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .home .team,
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .away .team,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .home .team,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .away .team {
     width: 150px;
-  }
-  body .sub01 .inner .rank-container .title-wrap,
-  html .sub01 .inner .rank-container .title-wrap {
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .sub01 .inner .rank-container .title-wrap .league-title,
-  html .sub01 .inner .rank-container .title-wrap .league-title {
-    font-size: 20px;
-    display: flex;
-    width: 100%;
-  }
-  body .sub01 .inner .rank-container .title-wrap .choice-box,
-  html .sub01 .inner .rank-container .title-wrap .choice-box {
-    order: -1;
-    width: 260px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-head,
-  html .sub01 .inner .rank-container .lck-rank .list-head {
-    padding: 0 10px 0 6px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-head .right .win,
-  body .sub01 .inner .rank-container .lck-rank .list-head .right .lose,
-  body .sub01 .inner .rank-container .lck-rank .list-head .right .interval,
-  html .sub01 .inner .rank-container .lck-rank .list-head .right .win,
-  html .sub01 .inner .rank-container .lck-rank .list-head .right .lose,
-  html .sub01 .inner .rank-container .lck-rank .list-head .right .interval {
-    font-size: 18px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-head .right .lose,
-  html .sub01 .inner .rank-container .lck-rank .list-head .right .lose {
-    margin-left: 26px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-head .right .interval,
-  html .sub01 .inner .rank-container .lck-rank .list-head .right .interval {
-    margin-left: 14px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-body,
-  html .sub01 .inner .rank-container .lck-rank .list-body {
-    padding: 0 10px 0 10px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-body .left .total-rank,
-  html .sub01 .inner .rank-container .lck-rank .list-body .left .total-rank {
-    margin-right: 20px;
-    font-size: 18px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-body .left .team,
-  html .sub01 .inner .rank-container .lck-rank .list-body .left .team {
-    font-size: 16px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-body .right .win,
-  body .sub01 .inner .rank-container .lck-rank .list-body .right .lose,
-  body .sub01 .inner .rank-container .lck-rank .list-body .right .interval,
-  html .sub01 .inner .rank-container .lck-rank .list-body .right .win,
-  html .sub01 .inner .rank-container .lck-rank .list-body .right .lose,
-  html .sub01 .inner .rank-container .lck-rank .list-body .right .interval {
-    font-size: 16px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-body .right .interval,
-  html .sub01 .inner .rank-container .lck-rank .list-body .right .interval {
-    margin-left: 26px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-body .right .lose,
-  html .sub01 .inner .rank-container .lck-rank .list-body .right .lose {
-    margin-left: 20px;
   }
 }
 @media (max-width: 500px) {
-  body .sub01 .inner section .mon .game-date .game-info .center,
-  html .sub01 .inner section .mon .game-date .game-info .center {
+  body .sub01 .inner .result-container .result-wrap .none-play,
+  html .sub01 .inner .result-container .result-wrap .none-play {
+    font-size: 20px;
+  }
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center {
     flex-direction: column;
     gap: 10px;
     align-items: end;
     margin-right: 26px;
   }
-  body .sub01 .inner section .mon .game-date .game-info .center .vs,
-  html .sub01 .inner section .mon .game-date .game-info .center .vs {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .vs,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .vs {
     display: none;
   }
-  body .sub01 .inner section .mon .game-date .game-info .center .home .team,
-  html .sub01 .inner section .mon .game-date .game-info .center .home .team {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .home .team,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .home .team {
     width: 250px;
   }
-  body .sub01 .inner section .mon .game-date .game-info .center .away,
-  html .sub01 .inner section .mon .game-date .game-info .center .away {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .away,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .away {
     margin-right: 0;
   }
-  body .sub01 .inner section .mon .game-date .game-info .center .away .team,
-  html .sub01 .inner section .mon .game-date .game-info .center .away .team {
+  body .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .away .team,
+  html .sub01 .inner .result-container .result-wrap .mon .game-date .game-info .center .away .team {
     order: -1;
     text-align: right;
     margin: 0 14px 0 0;
     width: 250px;
-  }
-  body .sub01 .inner .rank-container .lck-rank .list-body .left img,
-  html .sub01 .inner .rank-container .lck-rank .list-body .left img {
-    display: none;
   }
 }

@@ -32,7 +32,7 @@
                     display: none;
                 }
 
-                &:hover{
+                &:hover {
                     color: #666;
                 }
             }
@@ -150,7 +150,8 @@
                 .year-box {
                     width: 150px;
                     height: 50px;
-                    .this-year{
+
+                    .this-year {
                         text-align: center;
                         font-size: 50px;
                         line-height: 0.8;
@@ -197,7 +198,7 @@
                         color: $subTextColor;
                         position: absolute;
                         top: 2px;
-                        z-index:1;
+                        z-index: 1;
                     }
 
                     .month-prev {
@@ -236,6 +237,15 @@
         }
 
         .result-wrap {
+            .none-play {
+                font-size: 30px;
+                font-weight: bold;
+                color: #999;
+                text-align: center;
+                margin-top: 30px;
+                display: none;
+            }
+
             .mon {
                 display: none;
 
@@ -369,117 +379,6 @@
         }
     }
 
-    .rank-container {
-        margin-bottom: 120px;
-        display: none;
-
-        .title-wrap {
-            display: flex;
-            justify-content: space-between;
-            align-items: end;
-            margin-bottom: 30px;
-
-            .league-title {
-                font-size: 30px;
-            }
-
-            .choice-box {
-                width: 300px;
-                font-size: 18px;
-                padding: 5px 10px;
-                border: 1px solid $borderColor;
-                border-radius: 5px;
-                box-sizing: border-box;
-            }
-        }
-
-        .lck-rank {
-            li {
-                display: flex;
-                justify-content: space-between;
-                border-bottom: 1px solid $borderColor;
-                box-sizing: border-box;
-                align-items: center;
-            }
-
-            .list-head {
-                border-top: 1px solid $borderColor;
-                height: 50px;
-                background: #FFF0F0;
-                padding: 0 20px;
-
-                .left {
-                    span {
-                        font-size: 20px;
-                        color: $subTextColor;
-                    }
-                }
-
-                .right {
-                    span {
-                        font-size: 20px;
-                        color: $subTextColor;
-                    }
-
-                    .lose,
-                    .interval {
-                        margin: 0 0 0 140px;
-                    }
-                }
-            }
-
-            .list-body {
-                height: 60px;
-                padding: 0 30px 0 25px;
-
-                .left {
-                    display: flex;
-                    align-items: center;
-
-                    .total-rank {
-                        display: flex;
-                        width: 30px;
-                        justify-content: center;
-                        margin-right: 60px;
-                        font-size: 30px;
-                        color: $titleColor;
-                    }
-
-                    img {
-                        width: 40px;
-                        margin-right: 30px;
-                    }
-
-                    .team {
-                        font-size: 18px;
-                        color: $titleColor;
-                    }
-                }
-
-                .right {
-                    display: flex;
-
-                    .win,
-                    .lose,
-                    .interval {
-                        font-size: 18px;
-                        color: $titleColor;
-                        width: 30px;
-                        display: flex;
-                        justify-content: center;
-                    }
-
-                    .interval {
-                        margin-left: 150px;
-                    }
-
-                    .lose {
-                        margin-left: 136px;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media (max-width:1300px) {
@@ -496,20 +395,22 @@
                     margin-top: 129px;
                 }
 
-                section {
-                    .mon {
-                        .game-date {
-                            .game-info {
-                                .left {
-                                    .time {
-                                        padding-right: 30px
+                .result-container {
+                    .result-wrap {
+                        .mon {
+                            .game-date {
+                                .game-info {
+                                    .left {
+                                        .time {
+                                            padding-right: 30px
+                                        }
                                     }
-                                }
 
-                                .right {
-                                    .replay {
-                                        font-size: 14px;
-                                        margin-right: 10px;
+                                    .right {
+                                        .replay {
+                                            font-size: 14px;
+                                            margin-right: 10px;
+                                        }
                                     }
                                 }
                             }
@@ -552,61 +453,37 @@
                     }
                 }
 
-                section {
-                    .mon {
-                        .game-date {
-                            .date-box {
-                                .place {
-                                    display: block;
-                                }
-                            }
-
-                            .game-info {
-                                flex-direction: column;
-                                align-items: start;
-
-                                .left {
-                                    padding: 10px 0;
-                                }
-
-                                .center {
-                                    padding: 10px 0;
-                                    margin: 0 auto;
-
-                                    .home .team,
-                                    .away .team {
-                                        width: 300px;
+                .result-container {
+                    .result-wrap {
+                        .mon {
+                            .game-date {
+                                .date-box {
+                                    .place {
+                                        display: block;
                                     }
                                 }
 
-                                .right {
-                                    display: none;
-                                }
-                            }
-                        }
-                    }
-                }
+                                .game-info {
+                                    flex-direction: column;
+                                    align-items: start;
 
-                .rank-container {
-                    .lck-rank {
-                        .list-head {
-                            .right {
+                                    .left {
+                                        padding: 10px 0;
+                                    }
 
-                                .lose,
-                                .interval {
-                                    margin-left: 100px;
-                                }
-                            }
-                        }
+                                    .center {
+                                        padding: 10px 0;
+                                        margin: 0 auto;
 
-                        .list-body {
-                            .right {
-                                .interval {
-                                    margin-left: 110px;
-                                }
+                                        .home .team,
+                                        .away .team {
+                                            width: 300px;
+                                        }
+                                    }
 
-                                .lose {
-                                    margin-left: 96px;
+                                    .right {
+                                        display: none;
+                                    }
                                 }
                             }
                         }
@@ -657,7 +534,7 @@
                     }
                 }
 
-                section {
+                .result-container {
                     .calendar-wrap {
                         .year-wrap {
                             button {
@@ -666,7 +543,8 @@
 
                             .year-box {
                                 height: 40px;
-                                .this-year{
+
+                                .this-year {
                                     font-size: 40px;
                                 }
                             }
@@ -683,101 +561,29 @@
                         }
                     }
 
-                    .mon {
-                        .game-date {
-                            .game-info {
+                    .result-wrap {
+                        .mon {
+                            .game-date {
+                                .game-info {
 
-                                .left {
-                                    .time {
-                                        padding-right: 10px;
+                                    .left {
+                                        .time {
+                                            padding-right: 10px;
+                                        }
                                     }
-                                }
 
-                                .center {
+                                    .center {
 
-                                    .home .team,
-                                    .away .team {
-                                        width: 150px;
+                                        .home .team,
+                                        .away .team {
+                                            width: 150px;
+                                        }
                                     }
                                 }
                             }
                         }
                     }
                 }
-
-                .rank-container {
-                    .title-wrap {
-                        flex-direction: column;
-                        gap: 10px;
-
-                        .league-title {
-                            font-size: 20px;
-                            display: flex;
-                            width: 100%;
-                        }
-
-                        .choice-box {
-                            order: -1;
-                            width: 260px;
-                        }
-                    }
-
-                    .lck-rank {
-                        .list-head {
-                            padding: 0 10px 0 6px;
-
-                            .right {
-
-                                .win,
-                                .lose,
-                                .interval {
-                                    font-size: 18px;
-                                }
-
-                                .lose {
-                                    margin-left: 26px;
-                                }
-
-                                .interval {
-                                    margin-left: 14px;
-                                }
-                            }
-                        }
-
-                        .list-body {
-                            padding: 0 10px 0 10px;
-
-                            .left {
-                                .total-rank {
-                                    margin-right: 20px;
-                                    font-size: 18px;
-                                }
-
-                                .team {
-                                    font-size: 16px;
-                                }
-                            }
-
-                            .right {
-
-                                .win,
-                                .lose,
-                                .interval {
-                                    font-size: 16px;
-                                }
-
-                                .interval {
-                                    margin-left: 26px;
-                                }
-
-                                .lose {
-                                    margin-left: 20px;
-                                }
-                            }
-                        }
-                    }
-                }
-
             }
         }
     }
@@ -790,47 +596,41 @@
         .sub01 {
             .inner {
 
-                section {
-                    .mon {
-                        .game-date {
-
-                            .game-info {
-                                .center {
-                                    flex-direction: column;
-                                    gap: 10px;
-                                    align-items: end;
-                                    margin-right: 26px;
-
-                                    .vs {
-                                        display: none;
-                                    }
-
-                                    .home .team {
-                                        width: 250px;
-                                    }
-
-                                    .away {
-                                        margin-right: 0;
-                                    }
-
-                                    .away .team {
-                                        order: -1;
-                                        text-align: right;
-                                        margin: 0 14px 0 0;
-                                        width: 250px;
-                                    }
-                                }
-                            }
+                .result-container {
+                    .result-wrap {
+                        .none-play {
+                            font-size: 20px;
                         }
-                    }
-                }
 
-                .rank-container {
-                    .lck-rank {
-                        .list-body {
-                            .left {
-                                img {
-                                    display: none;
+                        .mon {
+                            .game-date {
+
+                                .game-info {
+                                    .center {
+                                        flex-direction: column;
+                                        gap: 10px;
+                                        align-items: end;
+                                        margin-right: 26px;
+
+                                        .vs {
+                                            display: none;
+                                        }
+
+                                        .home .team {
+                                            width: 250px;
+                                        }
+
+                                        .away {
+                                            margin-right: 0;
+                                        }
+
+                                        .away .team {
+                                            order: -1;
+                                            text-align: right;
+                                            margin: 0 14px 0 0;
+                                            width: 250px;
+                                        }
+                                    }
                                 }
                             }
                         }
