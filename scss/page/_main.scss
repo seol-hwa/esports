@@ -1382,6 +1382,11 @@
     body,
     html {
         main {
+            .visual-container{
+                .img-wrapper{
+                    height:60vw;
+                }
+            }
             .schedule-container {
                 .inner {
                     .schedule-bottom {

@@ -1698,6 +1698,10 @@ aside .top-btn:hover .text {
   }
 }
 @media (max-width: 500px) {
+  body main .visual-container .img-wrapper,
+  html main .visual-container .img-wrapper {
+    height: 60vw;
+  }
   body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game,
   html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game {
     gap: 30px;
