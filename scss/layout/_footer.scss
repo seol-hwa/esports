@@ -81,7 +81,10 @@ footer {
 
                     .text {
                         margin-bottom: 6px;
-
+                        display: flex;
+                        flex-wrap:wrap;
+                        justify-content: center;
+                        gap:6px 0;
                         span {
                             color: #666;
                             font-size: 14px;
