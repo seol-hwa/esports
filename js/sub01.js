@@ -41,6 +41,7 @@ function mobMenu() {
 
     menuCon.css({ top: $('header').outerHeight(), height: $(window).innerHeight() - $('header').outerHeight(), right: -$('header').outerWidth() });
 
+    //resize
     $(window).on('resize', function () {
         menuCon.css({ top: $('header').outerHeight(), height: $(window).innerHeight() - $('header').outerHeight() });
         if (isOpen == true) {
@@ -87,11 +88,12 @@ function nav() {
     const hbCon = $('.h-bottom-container');
     const dura = 200;
 
-    sub.css({width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left });
+    sub.css({ width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left });
+    
 
     //resize
     $(window).on('resize', function () {
-        sub.css({ top: hbCon.outerHeight()-1, width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left })
+        sub.css({ top: hbCon.outerHeight() - 1, width: hbCon.innerWidth(), paddingLeft: hbCon.children('.inner').offset().left });
     })
 
 
@@ -124,14 +126,17 @@ function main() {
     const monthMo = monthList.find('a');
     const todayMonth = new Date().getMonth();
     const pcMonthList = $('.month-pc').children();
-    const moMonthList=$('.month-mo-list').children();
+    const moMonthList = $('.month-mo-list').children();
+    const resultWrap = $('.result-wrap');
+    const monthName = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 
     secondTitle.eq(setNum).addClass('on');
     thirdTitle.eq(setNum).addClass('on');
     $('.this-year').text(toYear);
     pcMonthList.eq(todayMonth).addClass('on');
     moMonthList.eq(todayMonth).addClass('on');
-
+    $('.kart-result-wrap').show();
+    $('.kart' + monthName[todayMonth] + '').show();
 
     secondTitle.on('click', function () {
         setNum = $(this).index();
@@ -148,31 +153,80 @@ function main() {
             thirdTitle.removeClass('on');
             thirdTitle.eq(setNum).addClass('on');
         }
+
+        resultWrap.hide();
+        if ($(this).text() == 'KARTRIDER' || $(this).text() == 'ALL') {
+            $('.kart-result-wrap').show()
+        } else if ($(this).text() == 'LOL') {
+            $('.lck-result-wrap').show();
+        } else if ($(this).text() == 'OVERWATCH') {
+            $('.league-result-wrap').show();
+        } else if ($(this).text() == 'PUBG') {
+            $('.pgc-result-wrap').show();
+        } else if ($(this).text() == 'STARCRAFT') {
+            $('.gsl-result-wrap').show();
+        } else if ($(this).text() == 'VALORANT') {
+            $('.vck-result-wrap').show();
+        }
     })
 
     thirdTitle.on('click', function () {
         thirdTitle.removeClass('on');
         $(this).addClass('on');
-    })
+        resultWrap.hide();
+        pcMonthList.removeClass('on');
+        moMonthList.removeClass('on');
+        pcMonthList.eq(todayMonth).addClass('on');
+        moMonthList.eq(todayMonth).addClass('on');
 
-    nextYear.on('click', function () {
-        toYear++;
-        $('.this-year').text(toYear);
-    })
-    prevYear.on('click', function () {
-        toYear--;
-        $('.this-year').text(toYear);
+        if ($(this).hasClass('KRLP') == true) {
+            $('.kart-result-wrap').show();
+            $('.kart' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('lck') == true) {
+            $('.lck-result-wrap').show();
+            $('.lck' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('lckcl') == true) {
+            $('.lckcl-result-wrap').show();
+            $('.lckcl' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('msi') == true) {
+            $('.msi-result-wrap').show();
+            $('.msi' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('worlds') == true) {
+            $('.worlds-result-wrap').show();
+            $('.worlds' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('owol') == true) {
+            $('.league-result-wrap').show();
+            $('.league' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('owct') == true) {
+            $('.ockl-result-wrap').show();
+            $('.ockl' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('pgc') == true) {
+            $('.pgc-result-wrap').show();
+            $('.pgc' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('pgi') == true) {
+            $('.pgi-result-wrap').show();
+            $('.pgi' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('pkg') == true) {
+            $('.pkg-result-wrap').show();
+            $('.pkg' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('gsl') == true) {
+            $('.gsl-result-wrap').show();
+            $('.gsl' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('vck') == true) {
+            $('.vck-result-wrap').show();
+            $('.vck' + monthName[todayMonth] + '').show();
+        }
     })
 
     nextMonth.on('click', function () {
-        let monthLeft = monthList.position().left;
-        if($(window).innerWidth() <= 555){
-            if(monthLeft <= -650){
+        const monthLeft = monthList.position().left;
+        if ($(window).innerWidth() <= 555) {
+            if (monthLeft <= -650) {
                 monthList.stop().animate({ left: monthLeft - 0 }, dura);
-            }else{
+            } else {
                 monthList.stop().animate({ left: monthLeft - 100 }, dura);
             }
-        }else{
+        } else {
             if (monthLeft <= -350) {
                 monthList.stop().animate({ left: monthLeft - 0 }, dura);
             } else {
@@ -181,7 +235,7 @@ function main() {
         }
     })
     prevMonth.on('click', function () {
-        let monthLeft = monthList.position().left;
+        const monthLeft = monthList.position().left;
         if (monthLeft >= 50) {
             monthList.stop().animate({ left: monthLeft + 0 }, dura);
         } else {
@@ -189,14 +243,69 @@ function main() {
         }
     })
     monthPc.on('click', function () {
+        const monthNum = $(this).parent().index();
         monthPc.parent().removeClass('on');
         $(this).parent().addClass('on');
+
+        $('.mon').hide();
+        if ($('.KRLP').hasClass('on')) {
+            $('.kart' + monthName[monthNum] + '').show();
+        } else if ($('.lck').hasClass('on')) {
+            $('.lck' + monthName[monthNum] + '').show();
+        } else if ($('.lckcl').hasClass('on')) {
+            $('.lckcl' + monthName[monthNum] + '').show();
+        } else if ($('.msi').hasClass('on')) {
+            $('.msi' + monthName[monthNum] + '').show();
+        } else if ($('.worlds').hasClass('on')) {
+            $('.worlds' + monthName[monthNum] + '').show();
+        } else if ($('.owol').hasClass('on')) {
+            $('.league' + monthName[monthNum] + '').show();
+        } else if ($('.owct').hasClass('on')) {
+            $('.ockl' + monthName[monthNum] + '').show();
+        } else if ($('.pgc').hasClass('on')) {
+            $('.pgc' + monthName[monthNum] + '').show();
+        } else if ($('.pgi').hasClass('on')) {
+            $('.pgi' + monthName[monthNum] + '').show();
+        } else if ($('.pkc').hasClass('on')) {
+            $('.pkc' + monthName[monthNum] + '').show();
+        } else if ($('.gsl').hasClass('on')) {
+            $('.gsl' + monthName[monthNum] + '').show();
+        } else if ($('.vck').hasClass('on')) {
+            $('.vck' + monthName[monthNum] + '').show();
+        }
     })
     monthMo.on('click', function () {
+        const monthNum = $(this).parent().index();
         monthMo.parent().removeClass('on');
         $(this).parent().addClass('on');
-    })
 
+        $('.mon').hide();
+        if ($('.KRLP').hasClass('on')) {
+            $('.kart' + monthName[monthNum] + '').show();
+        } else if ($('.lck').hasClass('on')) {
+            $('.lck' + monthName[monthNum] + '').show();
+        } else if ($('.lckcl').hasClass('on')) {
+            $('.lckcl' + monthName[monthNum] + '').show();
+        } else if ($('.msi').hasClass('on')) {
+            $('.msi' + monthName[monthNum] + '').show();
+        } else if ($('.worlds').hasClass('on')) {
+            $('.worlds' + monthName[monthNum] + '').show();
+        } else if ($('.owol').hasClass('on')) {
+            $('.league' + monthName[monthNum] + '').show();
+        } else if ($('.owct').hasClass('on')) {
+            $('.ockl' + monthName[monthNum] + '').show();
+        } else if ($('.pgc').hasClass('on')) {
+            $('.pgc' + monthName[monthNum] + '').show();
+        } else if ($('.pgi').hasClass('on')) {
+            $('.pgi' + monthName[monthNum] + '').show();
+        } else if ($('.pkc').hasClass('on')) {
+            $('.pkc' + monthName[monthNum] + '').show();
+        } else if ($('.gsl').hasClass('on')) {
+            $('.gsl' + monthName[monthNum] + '').show();
+        } else if ($('.vck').hasClass('on')) {
+            $('.vck' + monthName[monthNum] + '').show();
+        }
+    })
 
 }
 function footer() {

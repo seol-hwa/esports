@@ -278,7 +278,7 @@ header .h-bottom-container .inner .gnb-list > li > a {
   display: flex;
   align-items: center;
   color: #222;
-  padding: 18px 0 18px 30px;
+  padding: 18px 0 18px 20px;
 }
 header .h-bottom-container .inner .gnb-list > li > a:after {
   content: "";
@@ -286,7 +286,7 @@ header .h-bottom-container .inner .gnb-list > li > a:after {
   width: 1px;
   height: 16px;
   background: #eee;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 header .h-bottom-container .inner .gnb-list > li .submenu-list {
   position: absolute;
@@ -344,74 +344,77 @@ header .h-bottom-container .inner .search-box .search-btn .bx-search {
 }
 
 @media (max-width: 1300px) {
-  body header .h-top-container, html header .h-top-container {
+  body header .h-top-container,
+  html header .h-top-container {
     padding: 15px 30px;
   }
-  body header .h-top-container .inner, html header .h-top-container .inner {
+  body header .h-top-container .inner,
+  html header .h-top-container .inner {
     width: 100%;
   }
-  body header .h-top-container .inner .h-top-right, html header .h-top-container .inner .h-top-right {
+  body header .h-top-container .inner .h-top-right,
+  html header .h-top-container .inner .h-top-right {
     gap: 30px;
   }
-  body header .h-top-container .inner .h-top-right > a, html header .h-top-container .inner .h-top-right > a {
+  body header .h-top-container .inner .h-top-right > a,
+  html header .h-top-container .inner .h-top-right > a {
     font-size: 12px;
   }
-  body header .h-top-container .inner .h-top-right .lang-box a, html header .h-top-container .inner .h-top-right .lang-box a {
+  body header .h-top-container .inner .h-top-right .lang-box a,
+  html header .h-top-container .inner .h-top-right .lang-box a {
     font-size: 12px;
   }
-  body header .h-bottom-container, html header .h-bottom-container {
+  body header .h-bottom-container,
+  html header .h-bottom-container {
     padding: 0 30px;
   }
-  body header .h-bottom-container .inner, html header .h-bottom-container .inner {
+  body header .h-bottom-container .inner,
+  html header .h-bottom-container .inner {
     width: 100%;
   }
-  body header .h-bottom-container .inner .gnb-list > li > a, html header .h-bottom-container .inner .gnb-list > li > a {
-    padding: 14px 0 14px 20px;
-    font-size: 14px;
-  }
-  body header .h-bottom-container .inner .gnb-list > li > a:after, html header .h-bottom-container .inner .gnb-list > li > a:after {
-    margin-left: 20px;
-  }
-  body header .h-bottom-container .inner .gnb-list > li .submenu-list, html header .h-bottom-container .inner .gnb-list > li .submenu-list {
-    top: 48px;
-  }
-  body header .h-bottom-container .inner .gnb-list > li .submenu-list li a, html header .h-bottom-container .inner .gnb-list > li .submenu-list li a {
-    padding: 16px 10px;
-    font-size: 14px;
-  }
-  body header .h-bottom-container .inner .search-box input, html header .h-bottom-container .inner .search-box input {
+  body header .h-bottom-container .inner .search-box input,
+  html header .h-bottom-container .inner .search-box input {
     font-size: 12px;
   }
 }
 @media (max-width: 1024px) {
-  body header .h-top-container, html header .h-top-container {
+  body header .h-top-container,
+  html header .h-top-container {
     border-bottom: 1px solid #d9d9d9;
     padding: 15px 20px;
   }
-  body header .h-top-container .inner .logo a, html header .h-top-container .inner .logo a {
+  body header .h-top-container .inner .logo a,
+  html header .h-top-container .inner .logo a {
     font-size: 30px;
   }
-  body header .h-top-container .inner .h-top-right, html header .h-top-container .inner .h-top-right {
+  body header .h-top-container .inner .h-top-right,
+  html header .h-top-container .inner .h-top-right {
     padding: 0;
   }
-  body header .h-top-container .inner .h-top-right .text-wrap, html header .h-top-container .inner .h-top-right .text-wrap {
+  body header .h-top-container .inner .h-top-right .text-wrap,
+  html header .h-top-container .inner .h-top-right .text-wrap {
     display: none;
   }
-  body header .h-top-container .inner .h-top-right .btn-wrap, html header .h-top-container .inner .h-top-right .btn-wrap {
+  body header .h-top-container .inner .h-top-right .btn-wrap,
+  html header .h-top-container .inner .h-top-right .btn-wrap {
     display: block;
   }
-  body header .h-top-container .all-menu-wrap, html header .h-top-container .all-menu-wrap {
+  body header .h-top-container .all-menu-wrap,
+  html header .h-top-container .all-menu-wrap {
     display: block;
   }
-  body header .h-bottom-container, html header .h-bottom-container {
+  body header .h-bottom-container,
+  html header .h-bottom-container {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  body header .h-top-container, html header .h-top-container {
+  body header .h-top-container,
+  html header .h-top-container {
     padding: 10px 20px;
   }
-  body header .h-top-container .inner .logo a, html header .h-top-container .inner .logo a {
+  body header .h-top-container .inner .logo a,
+  html header .h-top-container .inner .logo a {
     font-size: 20px;
     gap: 5px;
   }

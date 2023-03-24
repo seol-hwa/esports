@@ -156,11 +156,13 @@ header {
                         .bx-minus {
                             display: none;
                         }
-                        &.on{
-                            .bx-minus{
+
+                        &.on {
+                            .bx-minus {
                                 display: block;
                             }
-                            .bx-plus{
+
+                            .bx-plus {
                                 display: none;
                             }
                         }
@@ -207,7 +209,7 @@ header {
                         display: flex;
                         align-items: center;
                         color: $titleColor;
-                        padding: 18px 0 18px 30px;
+                        padding: 18px 0 18px 20px;
 
                         &:after {
                             content: '';
@@ -215,7 +217,7 @@ header {
                             width: 1px;
                             height: 16px;
                             background: #eee;
-                            margin-left: 30px;
+                            margin-left: 20px;
                         }
                     }
 
@@ -237,9 +239,11 @@ header {
                                 font-size: 16px;
                                 color: $subTextColor;
                                 padding: 20px 10px;
+
                                 &:hover {
                                     color: $logoColor;
                                 }
+
                             }
                         }
                     }
@@ -297,8 +301,10 @@ header {
 }
 
 //media query
-@media (max-width:1300px){
-    body,html{
+@media (max-width:1300px) {
+
+    body,
+    html {
         header {
             .h-top-container {
                 padding: 15px 30px;
@@ -309,17 +315,18 @@ header {
                     .h-top-right {
                         gap: 30px;
 
-                        > a {
+                        >a {
                             font-size: 12px;
                         }
+
                         .lang-box {
-        
+
                             a {
                                 font-size: 12px;
                             }
-        
+
                         }
-        
+
                     }
                 }
             }
@@ -329,30 +336,6 @@ header {
 
                 .inner {
                     width: 100%;
-
-                    .gnb-list {
-                        >li {
-                            >a {
-                                padding: 14px 0 14px 20px;
-                                font-size: 14px;
-
-                                &:after {
-                                    margin-left: 20px;
-                                }
-                            }
-
-                            .submenu-list {
-                                top:48px;
-                                li {
-
-                                    a {
-                                        padding:16px 10px;
-                                        font-size: 14px;
-                                    }
-                                }
-                            }
-                        }
-                    }
 
                     .search-box {
                         input {
@@ -365,8 +348,10 @@ header {
     }
 }
 
-@media (max-width:1024px){
-    body,html{
+@media (max-width:1024px) {
+
+    body,
+    html {
         header {
             .h-top-container {
                 border-bottom: 1px solid $borderColor;
@@ -381,15 +366,18 @@ header {
 
                     .h-top-right {
                         padding: 0;
-                        .text-wrap{
+
+                        .text-wrap {
                             display: none;
                         }
-                        .btn-wrap{
+
+                        .btn-wrap {
                             display: block;
                         }
                     }
                 }
-                .all-menu-wrap{
+
+                .all-menu-wrap {
                     display: block;
                 }
             }
@@ -401,8 +389,10 @@ header {
     }
 }
 
-@media (max-width:768px){
-    body,html{
+@media (max-width:768px) {
+
+    body,
+    html {
         header {
             .h-top-container {
                 padding: 10px 20px;

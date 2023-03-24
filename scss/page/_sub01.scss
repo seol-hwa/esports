@@ -237,18 +237,17 @@
         }
 
         .result-wrap {
+            display: none;
             .none-play {
                 font-size: 30px;
                 font-weight: bold;
                 color: #999;
                 text-align: center;
                 margin-top: 30px;
-                display: none;
             }
 
             .mon {
                 display: none;
-
                 .game-date {
                     .date-box {
                         border-bottom: 1px solid $borderColor;
