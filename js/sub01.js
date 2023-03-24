@@ -277,6 +277,7 @@ function main() {
         } else if ($('.vck').hasClass('on')) {
             $('.vck' + monthName[monthNum] + '').show();
         }
+        return false
     })
     monthMo.on('click', function () {
         const monthNum = $(this).parent().index();
@@ -309,6 +310,7 @@ function main() {
         } else if ($('.vck').hasClass('on')) {
             $('.vck' + monthName[monthNum] + '').show();
         }
+        return false
     })
 
 }
