@@ -167,6 +167,8 @@ function visual() {
         if (dotNum >= imgNum) {
             nextVs(-1, 0);
             dotNum = 0;
+            nextVs(dotNum, dura);
+            nextBtn(dotNum);
         } else {
             nextVs(dotNum, dura);
             nextBtn(dotNum);
