@@ -807,11 +807,12 @@ aside .top-btn:hover .text {
   margin-bottom: 16px;
 }
 .inner .result-container .calendar-wrap .year-wrap button {
-  color: #444;
+  color: #999;
   font-size: 50px;
   padding: 0;
   display: flex;
   align-items: center;
+  cursor: default;
 }
 .inner .result-container .calendar-wrap .year-wrap .year-box {
   width: 150px;

@@ -140,11 +140,12 @@
                 margin-bottom: 16px;
 
                 button {
-                    color: $subTextColor;
+                    color: #999;
                     font-size: 50px;
                     padding: 0;
                     display: flex;
                     align-items: center;
+                    cursor:default;
                 }
 
                 .year-box {

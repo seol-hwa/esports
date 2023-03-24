@@ -115,8 +115,6 @@ function main() {
     const thirdTitle = $('.small-scale').find('a');
     let setNum = 0;
     const gameBox = $('.game-box');
-    const nextYear = $('.next');
-    const prevYear = $('.prev');
     const monthList = $('.month-mo-list');
     const prevMonth = $('.month-prev');
     const nextMonth = $('.month-next');
@@ -157,16 +155,22 @@ function main() {
         resultWrap.hide();
         if ($(this).text() == 'KARTRIDER' || $(this).text() == 'ALL') {
             $('.kart-result-wrap').show()
+            $('.kart' + monthName[todayMonth] + '').show();
         } else if ($(this).text() == 'LOL') {
             $('.lck-result-wrap').show();
+            $('.lck' + monthName[todayMonth] + '').show();
         } else if ($(this).text() == 'OVERWATCH') {
             $('.league-result-wrap').show();
+            $('.league' + monthName[todayMonth] + '').show();
         } else if ($(this).text() == 'PUBG') {
             $('.pgc-result-wrap').show();
+            $('.pgc' + monthName[todayMonth] + '').show();
         } else if ($(this).text() == 'STARCRAFT') {
             $('.gsl-result-wrap').show();
+            $('.gsl' + monthName[todayMonth] + '').show();
         } else if ($(this).text() == 'VALORANT') {
             $('.vck-result-wrap').show();
+            $('.vck' + monthName[todayMonth] + '').show();
         }
     })
 
