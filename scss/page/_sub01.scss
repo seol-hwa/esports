@@ -80,13 +80,13 @@
                     align-items: center;
 
                     &:hover {
-                        figure {
+                        .img-box {
                             border-color: $btnBlack;
                         }
                     }
 
                     &.on {
-                        figure {
+                        .img-box {
                             border: 3px solid $logoColor;
                         }
                     }
@@ -105,7 +105,7 @@
 
                     }
 
-                    figure {
+                    .img-box {
                         width: 70px;
                         height: 70px;
                         border: 1px solid $borderColor;
@@ -120,7 +120,7 @@
                         }
                     }
 
-                    figcaption {
+                    .img-text {
                         p {
                             color: $subTextColor;
                         }
@@ -444,7 +444,7 @@
                             a {
                                 gap: 8px;
 
-                                figure {
+                                .img-box {
                                     width: 58px;
                                     height: 58px;
                                 }
