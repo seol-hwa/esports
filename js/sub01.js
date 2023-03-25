@@ -183,6 +183,7 @@ function main() {
         thirdTitle.removeClass('on');
         $(this).addClass('on');
         resultWrap.hide();
+        $('.mon').hide();
         pcMonthList.removeClass('on');
         moMonthList.removeClass('on');
         pcMonthList.eq(todayMonth).addClass('on');
@@ -215,9 +216,9 @@ function main() {
         } else if ($(this).hasClass('pgi') == true) {
             $('.pgi-result-wrap').show();
             $('.pgi' + monthName[todayMonth] + '').show();
-        } else if ($(this).hasClass('pkg') == true) {
-            $('.pkg-result-wrap').show();
-            $('.pkg' + monthName[todayMonth] + '').show();
+        } else if ($(this).hasClass('pkc') == true) {
+            $('.pkc-result-wrap').show();
+            $('.pkc' + monthName[todayMonth] + '').show();
         } else if ($(this).hasClass('gsl') == true) {
             $('.gsl-result-wrap').show();
             $('.gsl' + monthName[todayMonth] + '').show();

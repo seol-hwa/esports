@@ -769,24 +769,13 @@ aside .top-btn:hover .text {
   gap: 12px;
   align-items: center;
 }
-.inner .select-box .small-scale .game-box a:hover figure {
+.inner .select-box .small-scale .game-box a:hover .img-box {
   border-color: #333;
 }
-.inner .select-box .small-scale .game-box a.on figure {
+.inner .select-box .small-scale .game-box a.on .img-box {
   border: 3px solid #E3002B;
 }
-.inner .select-box .small-scale .game-box a div {
-  width: 70px;
-  height: 70px;
-  border: 1px solid #d9d9d9;
-  border-radius: 50%;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.inner .select-box .small-scale .game-box a div img {
-  width: 100%;
-}
-.inner .select-box .small-scale .game-box a figure {
+.inner .select-box .small-scale .game-box a .img-box {
   width: 70px;
   height: 70px;
   border: 1px solid #d9d9d9;
@@ -796,10 +785,10 @@ aside .top-btn:hover .text {
   display: flex;
   align-items: center;
 }
-.inner .select-box .small-scale .game-box a figure img {
+.inner .select-box .small-scale .game-box a .img-box img {
   width: 100%;
 }
-.inner .select-box .small-scale .game-box a figcaption p {
+.inner .select-box .small-scale .game-box a .img-text p {
   color: #444;
 }
 .inner .result-container {
@@ -1049,8 +1038,8 @@ aside .top-btn:hover .text {
   html .sub01 .inner .select-box .small-scale .game-box a {
     gap: 8px;
   }
-  body .sub01 .inner .select-box .small-scale .game-box a figure,
-  html .sub01 .inner .select-box .small-scale .game-box a figure {
+  body .sub01 .inner .select-box .small-scale .game-box a .img-box,
+  html .sub01 .inner .select-box .small-scale .game-box a .img-box {
     width: 58px;
     height: 58px;
   }
