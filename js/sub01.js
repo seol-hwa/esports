@@ -140,6 +140,10 @@ function main() {
         setNum = $(this).index();
         secondTitle.removeClass('on');
         $(this).addClass('on');
+        monthPc.parent().removeClass('on');
+        monthMo.parent().removeClass('on');
+        pcMonthList.eq(todayMonth).addClass('on');
+        moMonthList.eq(todayMonth).addClass('on');
 
         if (setNum > 0) {
             gameBox.hide();
@@ -153,6 +157,7 @@ function main() {
         }
 
         resultWrap.hide();
+        $('.mon').hide();
         if ($(this).text() == 'KARTRIDER' || $(this).text() == 'ALL') {
             $('.kart-result-wrap').show()
             $('.kart' + monthName[todayMonth] + '').show();
