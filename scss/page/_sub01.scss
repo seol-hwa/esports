@@ -161,6 +161,9 @@
                         a {
                             font-size: 20px;
                             color: $subTextColor;
+                            &:hover{
+                                color:$logoColor;
+                            }
 
                         }
 
@@ -210,6 +213,9 @@
                             a {
                                 font-size: 20px;
                                 color: $subTextColor;
+                                &:hover{
+                                    color:$logoColor;
+                                }
                             }
 
                             &.on {

@@ -831,6 +831,9 @@ aside .top-btn:hover .text {
   font-size: 20px;
   color: #444;
 }
+.inner .result-container .calendar-wrap .month-wrap .month-pc li a:hover {
+  color: #E3002B;
+}
 .inner .result-container .calendar-wrap .month-wrap .month-pc li.on a {
   color: #E3002B;
 }
@@ -868,6 +871,9 @@ aside .top-btn:hover .text {
 .inner .result-container .calendar-wrap .month-wrap .month-mo-wrap .month-mo-list li a {
   font-size: 20px;
   color: #444;
+}
+.inner .result-container .calendar-wrap .month-wrap .month-mo-wrap .month-mo-list li a:hover {
+  color: #E3002B;
 }
 .inner .result-container .calendar-wrap .month-wrap .month-mo-wrap .month-mo-list li.on a {
   color: #E3002B;
