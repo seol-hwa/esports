@@ -15,7 +15,7 @@ $(document).ready(function () {
 function skip() {
     const skipMenu = $('.skip-menu').find('a');
     skipMenu.on('click', function () {
-        var add = $(this.hash).offset().top;
+        var add = $(this.hash).offset().top-100;
 
         $('body,html').stop().animate({ scrollTop: add }, 500);
         console.log(add);

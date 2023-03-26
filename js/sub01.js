@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    skip();
     lang();
     mobMenu();
     nav();
@@ -6,7 +7,15 @@ $(document).ready(function () {
     footer();
     quick();
 })
+function skip() {
+    const skipMenu = $('.skip-menu').find('a');
+    skipMenu.on('click', function () {
+        var add = $(this.hash).offset().top -100;
 
+        $('body,html').stop().animate({ scrollTop: add }, 500);
+        console.log(add);
+    })
+}
 function lang() {
     //header top
     const kor = $('.lang_ko');
