@@ -196,7 +196,6 @@ function calendar() {
     const next = $('.tbody-next');
     const dist = 100;
     const dura = 300;
-    let timer;
 
 
     $('.schedule-game').css({ 'display': 'none' })
@@ -219,17 +218,14 @@ function calendar() {
 
     })
 
-    const dateTd = $('.ui-datepicker-today').outerWidth(true) + 20;
+    const dateTd = $('.ui-state-active').parent().outerWidth(true) + 20;
 
-    if (window.matchMedia('(max-width:768px)').matches == true) {
-        startP();
-    }
+    resizeEvent();
 
 
     //resize
     $(window).on('resize', function () {
-        clearTimeout(timer);
-        timer = setTimeout(resizeEvent, 300)
+        resizeEvent();
     })
 
     function resizeEvent() {
@@ -243,8 +239,8 @@ function calendar() {
 
     function startP() {
         let winW = $(window).innerWidth();
-        const weekItem = $('tbody').find('.ui-datepicker-today').parent().index() * 7;
-        const dateItem = $('tbody').find('.ui-datepicker-today').index() - 1;
+        const weekItem = $('tbody').find('.ui-state-active').parents('tr').index() * 7;
+        const dateItem = $('tbody').find('.ui-state-active').parent().index() - 1;
 
         $('tbody').css({ left: -(dateTd * (weekItem + dateItem)) + winW / 2 });
     }
