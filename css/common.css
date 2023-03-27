@@ -1398,302 +1398,397 @@ aside .top-btn:hover .text {
 }
 
 @media (max-width: 1300px) {
-  body main .visual-container, html main .visual-container {
+  body main .visual-container,
+  html main .visual-container {
     margin-top: 129px;
   }
-  body main .visual-container .img-wrapper, html main .visual-container .img-wrapper {
+  body main .visual-container .img-wrapper,
+  html main .visual-container .img-wrapper {
     height: 40vw;
   }
-  body main .ticket-container, html main .ticket-container {
+  body main .ticket-container,
+  html main .ticket-container {
     padding: 0 30px;
   }
-  body main .ticket-container .inner, html main .ticket-container .inner {
+  body main .ticket-container .inner,
+  html main .ticket-container .inner {
     width: 100%;
   }
-  body main .ticket-container .inner .game-wrapper, html main .ticket-container .inner .game-wrapper {
+  body main .ticket-container .inner .game-wrapper,
+  html main .ticket-container .inner .game-wrapper {
     justify-content: space-around;
   }
-  body main .ticket-container .inner .game-wrapper .game-total-box:last-child, html main .ticket-container .inner .game-wrapper .game-total-box:last-child {
+  body main .ticket-container .inner .game-wrapper .game-total-box:last-child,
+  html main .ticket-container .inner .game-wrapper .game-total-box:last-child {
     display: none;
   }
-  body main .ex-container, html main .ex-container {
+  body main .ex-container,
+  html main .ex-container {
     padding: 0 30px;
   }
-  body main .ex-container .inner, html main .ex-container .inner {
+  body main .ex-container .inner,
+  html main .ex-container .inner {
     width: 100%;
   }
-  body main .ex-container .inner .ex-wrapper, html main .ex-container .inner .ex-wrapper {
+  body main .ex-container .inner .ex-wrapper,
+  html main .ex-container .inner .ex-wrapper {
     justify-content: space-around;
   }
-  body main .ex-container .inner .ex-wrapper .ex-box:last-child, html main .ex-container .inner .ex-wrapper .ex-box:last-child {
+  body main .ex-container .inner .ex-wrapper .ex-box:last-child,
+  html main .ex-container .inner .ex-wrapper .ex-box:last-child {
     display: none;
   }
-  body main .schedule-container, html main .schedule-container {
+  body main .schedule-container,
+  html main .schedule-container {
     padding: 0 30px;
   }
-  body main .schedule-container .inner, html main .schedule-container .inner {
+  body main .schedule-container .inner,
+  html main .schedule-container .inner {
     width: 100%;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table {
     width: 480px;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game {
     gap: 30px 0;
     width: calc(100% - 480px);
     padding: 20px;
     align-content: space-between;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap {
     width: 50%;
   }
-  body main .event-container .event-mo, html main .event-container .event-mo {
+  body main .event-container .event-mo,
+  html main .event-container .event-mo {
     display: block;
   }
-  body main .team-container, html main .team-container {
+  body main .team-container,
+  html main .team-container {
     padding: 50px 30px;
   }
-  body main .team-container .inner, html main .team-container .inner {
+  body main .team-container .inner,
+  html main .team-container .inner {
     width: 100%;
   }
-  body main .team-container .inner .team-box li ul li, html main .team-container .inner .team-box li ul li {
+  body main .team-container .inner .team-box li ul li,
+  html main .team-container .inner .team-box li ul li {
     width: 16.6666666667%;
   }
-  body main .stadium-container .stadium-wrap .stadium-list li a, html main .stadium-container .stadium-wrap .stadium-list li a {
+  body main .stadium-container .stadium-wrap .stadium-list li a,
+  html main .stadium-container .stadium-wrap .stadium-list li a {
     width: 240px;
     height: 240px;
   }
-  body main .notice-container, html main .notice-container {
+  body main .notice-container,
+  html main .notice-container {
     padding: 0 30px;
   }
-  body main .notice-container .inner, html main .notice-container .inner {
+  body main .notice-container .inner,
+  html main .notice-container .inner {
     width: 100%;
   }
 }
 @media (max-width: 1024px) {
-  body main .visual-container, html main .visual-container {
+  body main .visual-container,
+  html main .visual-container {
     margin-top: 61px;
   }
-  body main .ticket-container, html main .ticket-container {
+  body main .ticket-container,
+  html main .ticket-container {
     padding: 0 20px;
   }
-  body main .ticket-container .inner .game-wrapper, html main .ticket-container .inner .game-wrapper {
+  body main .ticket-container .inner .game-wrapper,
+  html main .ticket-container .inner .game-wrapper {
     flex-wrap: wrap;
     gap: 50px;
   }
-  body main .ticket-container .inner .game-wrapper .game-total-box:nth-child(3), html main .ticket-container .inner .game-wrapper .game-total-box:nth-child(3) {
+  body main .ticket-container .inner .game-wrapper .game-total-box:nth-child(3),
+  html main .ticket-container .inner .game-wrapper .game-total-box:nth-child(3) {
     display: none;
   }
-  body main .ex-container, html main .ex-container {
+  body main .ex-container,
+  html main .ex-container {
     padding: 0 20px;
   }
-  body main .ex-container .inner .ex-wrapper, html main .ex-container .inner .ex-wrapper {
+  body main .ex-container .inner .ex-wrapper,
+  html main .ex-container .inner .ex-wrapper {
     flex-wrap: wrap;
     gap: 50px;
   }
-  body main .ex-container .inner .ex-wrapper .ex-box:nth-child(3), html main .ex-container .inner .ex-wrapper .ex-box:nth-child(3) {
+  body main .ex-container .inner .ex-wrapper .ex-box:nth-child(3),
+  html main .ex-container .inner .ex-wrapper .ex-box:nth-child(3) {
     display: none;
   }
-  body main .schedule-container, html main .schedule-container {
+  body main .schedule-container,
+  html main .schedule-container {
     padding: 0 20px;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper {
     flex-direction: column;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table {
     border-right: none;
     margin: 0 auto;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game {
     width: 100%;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap {
     width: 33.3333333333%;
   }
-  body main .team-container, html main .team-container {
+  body main .team-container,
+  html main .team-container {
     padding: 50px 20px;
   }
-  body main .team-container .inner .team-box li ul li, html main .team-container .inner .team-box li ul li {
+  body main .team-container .inner .team-box li ul li,
+  html main .team-container .inner .team-box li ul li {
     width: 20%;
   }
-  body main .stadium-container .stadium-wrap .stadium-list li a, html main .stadium-container .stadium-wrap .stadium-list li a {
+  body main .stadium-container .stadium-wrap .stadium-list li a,
+  html main .stadium-container .stadium-wrap .stadium-list li a {
     width: 200px;
     height: 200px;
   }
-  body main .stadium-container .stadium-wrap .stadium-list li a .img-mask, html main .stadium-container .stadium-wrap .stadium-list li a .img-mask {
+  body main .stadium-container .stadium-wrap .stadium-list li a .img-mask,
+  html main .stadium-container .stadium-wrap .stadium-list li a .img-mask {
     font-size: 18px;
   }
-  body main .notice-container, html main .notice-container {
+  body main .notice-container,
+  html main .notice-container {
     padding: 0 20px;
   }
-  body main .notice-container .inner, html main .notice-container .inner {
+  body main .notice-container .inner,
+  html main .notice-container .inner {
     flex-direction: column;
     align-items: center;
     gap: 80px;
   }
-  body main .notice-container .inner .news-wrapper, html main .notice-container .inner .news-wrapper {
+  body main .notice-container .inner .news-wrapper,
+  html main .notice-container .inner .news-wrapper {
     width: 80%;
   }
-  body main .notice-container .inner .notice-wrapper, html main .notice-container .inner .notice-wrapper {
+  body main .notice-container .inner .notice-wrapper,
+  html main .notice-container .inner .notice-wrapper {
     width: 80%;
   }
 }
 @media (max-width: 768px) {
-  body main .visual-container, html main .visual-container {
+  body main .visual-container,
+  html main .visual-container {
     margin-top: 51px;
   }
-  body main .top-wrapper, html main .top-wrapper {
+  body main .top-wrapper,
+  html main .top-wrapper {
     flex-wrap: wrap;
     gap: 10px;
   }
-  body main .top-wrapper .title, html main .top-wrapper .title {
+  body main .top-wrapper .title,
+  html main .top-wrapper .title {
     font-size: 24px;
   }
-  body main .ticket-container .inner .top-wrapper, html main .ticket-container .inner .top-wrapper {
+  body main .ticket-container .inner .top-wrapper,
+  html main .ticket-container .inner .top-wrapper {
     justify-content: center;
   }
-  body main .ticket-container .inner .top-wrapper .s-more-btn, html main .ticket-container .inner .top-wrapper .s-more-btn {
+  body main .ticket-container .inner .top-wrapper .s-more-btn,
+  html main .ticket-container .inner .top-wrapper .s-more-btn {
     display: none;
   }
-  body main .ticket-container .inner .game-wrapper .game-total-box, html main .ticket-container .inner .game-wrapper .game-total-box {
+  body main .ticket-container .inner .game-wrapper .game-total-box,
+  html main .ticket-container .inner .game-wrapper .game-total-box {
     width: 200px;
   }
-  body main .ticket-container .inner .game-wrapper .game-total-box:nth-child(4), html main .ticket-container .inner .game-wrapper .game-total-box:nth-child(4) {
+  body main .ticket-container .inner .game-wrapper .game-total-box:nth-child(4),
+  html main .ticket-container .inner .game-wrapper .game-total-box:nth-child(4) {
     display: none;
   }
-  body main .ticket-container .inner .game-wrapper .game-total-box .game-box .game-info .game-place, html main .ticket-container .inner .game-wrapper .game-total-box .game-box .game-info .game-place {
+  body main .ticket-container .inner .game-wrapper .game-total-box .game-box .game-info .game-place,
+  html main .ticket-container .inner .game-wrapper .game-total-box .game-box .game-info .game-place {
     display: none;
   }
-  body main .ticket-container .inner .btn-box, html main .ticket-container .inner .btn-box {
+  body main .ticket-container .inner .btn-box,
+  html main .ticket-container .inner .btn-box {
     display: flex;
   }
-  body main .ex-container .inner .top-wrapper, html main .ex-container .inner .top-wrapper {
+  body main .ex-container .inner .top-wrapper,
+  html main .ex-container .inner .top-wrapper {
     justify-content: center;
   }
-  body main .ex-container .inner .top-wrapper .s-more-btn, html main .ex-container .inner .top-wrapper .s-more-btn {
+  body main .ex-container .inner .top-wrapper .s-more-btn,
+  html main .ex-container .inner .top-wrapper .s-more-btn {
     display: none;
   }
-  body main .ex-container .inner .ex-wrapper .ex-box, html main .ex-container .inner .ex-wrapper .ex-box {
+  body main .ex-container .inner .ex-wrapper .ex-box,
+  html main .ex-container .inner .ex-wrapper .ex-box {
     width: 200px;
   }
-  body main .ex-container .inner .ex-wrapper .ex-box:nth-child(3), body main .ex-container .inner .ex-wrapper .ex-box:nth-child(4), html main .ex-container .inner .ex-wrapper .ex-box:nth-child(3), html main .ex-container .inner .ex-wrapper .ex-box:nth-child(4) {
+  body main .ex-container .inner .ex-wrapper .ex-box:nth-child(3), body main .ex-container .inner .ex-wrapper .ex-box:nth-child(4),
+  html main .ex-container .inner .ex-wrapper .ex-box:nth-child(3),
+  html main .ex-container .inner .ex-wrapper .ex-box:nth-child(4) {
     display: none;
   }
-  body main .ex-container .inner .btn-box, html main .ex-container .inner .btn-box {
+  body main .ex-container .inner .btn-box,
+  html main .ex-container .inner .btn-box {
     display: flex;
   }
-  body main .schedule-container .inner .schedule-top, html main .schedule-container .inner .schedule-top {
+  body main .schedule-container .inner .schedule-top,
+  html main .schedule-container .inner .schedule-top {
     margin-bottom: 10px;
     height: 80px;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .btn-box, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .btn-box {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .btn-box,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .btn-box {
     display: block;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table {
     padding: 0;
     margin: 0;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-title span, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-title span {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-title span,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-title span {
     font-size: 40px;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next {
     right: -60px;
     top: 0px;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev {
     left: -60px;
     top: 0px;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar {
     overflow: hidden;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar thead, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar thead {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar thead,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar thead {
     display: none;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody {
     display: flex;
     gap: 20px;
     margin-bottom: 10px;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr {
     display: flex;
     gap: 20px;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr td, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr td {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr td,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr td {
     padding-top: 0;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr td a, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr td a {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr td a,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-table .ui-datepicker-inline .ui-datepicker-calendar tbody tr td a {
     font-size: 20px;
     width: 40px;
     height: 40px;
     line-height: 40px;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game {
     border-top: 1px solid #d9d9d9;
     padding: 40px 20px;
   }
-  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap, html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap {
+  body main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap,
+  html main .schedule-container .inner .schedule-bottom .schedule-table-wrapper .schedule-game .g-time-wrap {
     width: 50%;
   }
-  body main .schedule-container .inner .btn-box .b-more-btn, html main .schedule-container .inner .btn-box .b-more-btn {
+  body main .schedule-container .inner .btn-box .b-more-btn,
+  html main .schedule-container .inner .btn-box .b-more-btn {
     font-size: 20px;
   }
-  body main .team-container, html main .team-container {
+  body main .event-container .event-mo,
+  html main .event-container .event-mo {
+    background-size: auto 100%;
+  }
+  body main .team-container,
+  html main .team-container {
     padding: 50px 30px;
   }
-  body main .team-container .inner, html main .team-container .inner {
+  body main .team-container .inner,
+  html main .team-container .inner {
     width: 100%;
   }
-  body main .team-container .inner .top-wrapper, html main .team-container .inner .top-wrapper {
+  body main .team-container .inner .top-wrapper,
+  html main .team-container .inner .top-wrapper {
     justify-content: center;
   }
-  body main .team-container .inner .top-wrapper .s-more-btn, html main .team-container .inner .top-wrapper .s-more-btn {
+  body main .team-container .inner .top-wrapper .s-more-btn,
+  html main .team-container .inner .top-wrapper .s-more-btn {
     display: none;
   }
-  body main .team-container .inner .league-box, html main .team-container .inner .league-box {
+  body main .team-container .inner .league-box,
+  html main .team-container .inner .league-box {
     flex-wrap: wrap;
   }
-  body main .team-container .inner .league-box li a, html main .team-container .inner .league-box li a {
+  body main .team-container .inner .league-box li a,
+  html main .team-container .inner .league-box li a {
     font-size: 14px;
   }
-  body main .team-container .inner .team-box li ul li, html main .team-container .inner .team-box li ul li {
+  body main .team-container .inner .team-box li ul li,
+  html main .team-container .inner .team-box li ul li {
     width: 110px;
   }
-  body main .team-container .inner .team-box li ul li a, html main .team-container .inner .team-box li ul li a {
+  body main .team-container .inner .team-box li ul li a,
+  html main .team-container .inner .team-box li ul li a {
     width: 80px;
     height: 80px;
   }
-  body main .team-container .inner .team-box li ul li a img, html main .team-container .inner .team-box li ul li a img {
+  body main .team-container .inner .team-box li ul li a img,
+  html main .team-container .inner .team-box li ul li a img {
     width: 60px;
   }
-  body main .team-container .inner .btn-box, html main .team-container .inner .btn-box {
+  body main .team-container .inner .btn-box,
+  html main .team-container .inner .btn-box {
     display: flex;
   }
-  body main .stadium-container .title, html main .stadium-container .title {
+  body main .stadium-container .title,
+  html main .stadium-container .title {
     font-size: 24px;
   }
-  body main .stadium-container .stadium-wrap .stadium-list li, html main .stadium-container .stadium-wrap .stadium-list li {
+  body main .stadium-container .stadium-wrap .stadium-list li,
+  html main .stadium-container .stadium-wrap .stadium-list li {
     margin-right: 30px;
   }
-  body main .stadium-container .stadium-wrap .stadium-list li a, html main .stadium-container .stadium-wrap .stadium-list li a {
+  body main .stadium-container .stadium-wrap .stadium-list li a,
+  html main .stadium-container .stadium-wrap .stadium-list li a {
     width: 150px;
     height: 150px;
   }
-  body main .stadium-container .stadium-wrap .stadium-list li a .img-mask, html main .stadium-container .stadium-wrap .stadium-list li a .img-mask {
+  body main .stadium-container .stadium-wrap .stadium-list li a .img-mask,
+  html main .stadium-container .stadium-wrap .stadium-list li a .img-mask {
     font-size: 14px;
   }
-  body main .stadium-container .btn-box .b-more-btn, html main .stadium-container .btn-box .b-more-btn {
+  body main .stadium-container .btn-box .b-more-btn,
+  html main .stadium-container .btn-box .b-more-btn {
     font-size: 20px;
   }
-  body main .notice-container .inner .news-wrapper, html main .notice-container .inner .news-wrapper {
+  body main .notice-container .inner .news-wrapper,
+  html main .notice-container .inner .news-wrapper {
     width: 100%;
   }
-  body main .notice-container .inner .news-wrapper .text-wrapper .text p, html main .notice-container .inner .news-wrapper .text-wrapper .text p {
+  body main .notice-container .inner .news-wrapper .text-wrapper .text p,
+  html main .notice-container .inner .news-wrapper .text-wrapper .text p {
     width: 60%;
   }
-  body main .notice-container .inner .notice-wrapper, html main .notice-container .inner .notice-wrapper {
+  body main .notice-container .inner .notice-wrapper,
+  html main .notice-container .inner .notice-wrapper {
     width: 100%;
   }
-  body main .notice-container .inner .notice-wrapper .text-wrapper .text p, html main .notice-container .inner .notice-wrapper .text-wrapper .text p {
+  body main .notice-container .inner .notice-wrapper .text-wrapper .text p,
+  html main .notice-container .inner .notice-wrapper .text-wrapper .text p {
     width: 60%;
   }
 }
