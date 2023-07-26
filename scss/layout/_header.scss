@@ -98,6 +98,7 @@ header {
 
                         .bx-menu {
                             font-size: 30px;
+                            color:$titleColor;
                         }
                     }
 
@@ -110,6 +111,7 @@ header {
 
                         .bx-x {
                             font-size: 30px;
+                            color:$titleColor;
                         }
                     }
                 }
@@ -126,6 +128,7 @@ header {
             width: 100%;
             padding: 0px 30px;
             box-sizing: border-box;
+            overflow-y: auto;
 
             .all-menu-top {
                 display: flex;
