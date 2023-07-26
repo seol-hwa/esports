@@ -197,6 +197,7 @@ header .h-top-container .inner .h-top-right .btn-wrap .all-menu-btn {
 }
 header .h-top-container .inner .h-top-right .btn-wrap .all-menu-btn .bx-menu {
   font-size: 30px;
+  color: #222;
 }
 header .h-top-container .inner .h-top-right .btn-wrap .all-menu-close {
   display: none;
@@ -207,6 +208,7 @@ header .h-top-container .inner .h-top-right .btn-wrap .all-menu-close {
 }
 header .h-top-container .inner .h-top-right .btn-wrap .all-menu-close .bx-x {
   font-size: 30px;
+  color: #222;
 }
 header .h-top-container .all-menu-wrap {
   display: none;
@@ -217,6 +219,7 @@ header .h-top-container .all-menu-wrap {
   width: 100%;
   padding: 0px 30px;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 header .h-top-container .all-menu-wrap .all-menu-top {
   display: flex;
