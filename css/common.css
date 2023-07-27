@@ -216,7 +216,7 @@ header .h-top-container .all-menu-wrap {
   right: 0;
   background: #fff;
   width: 100%;
-  min-height: calc(100vh - 61px);
+  height: calc(100vh - 61px);
   padding: 0px 30px;
   box-sizing: border-box;
   overflow-y: auto;
@@ -229,6 +229,9 @@ header .h-top-container .all-menu-wrap .all-menu-top {
 header .h-top-container .all-menu-wrap .all-menu-top a {
   color: #444;
   font-size: 18px;
+}
+header .h-top-container .all-menu-wrap .mo-menu-list {
+  padding-bottom: 50px;
 }
 header .h-top-container .all-menu-wrap .mo-menu-list > li {
   border-bottom: 1px solid #d9d9d9;
@@ -424,7 +427,7 @@ header .h-bottom-container .inner .search-box .search-btn .bx-search {
   }
   body header .h-top-container .all-menu-wrap,
   html header .h-top-container .all-menu-wrap {
-    min-height: calc(100vh - 51px);
+    height: calc(100vh - 51px);
     top: 51px;
     right: -100vw;
   }

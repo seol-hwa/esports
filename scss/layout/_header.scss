@@ -126,7 +126,7 @@ header {
             right: 0;
             background: $backgroundColor;
             width: 100%;
-            min-height: calc(100vh - 61px);
+            height: calc(100vh - 61px);
             padding: 0px 30px;
             box-sizing: border-box;
             overflow-y: auto;
@@ -143,6 +143,7 @@ header {
             }
 
             .mo-menu-list {
+                padding-bottom:50px;
                 >li {
                     border-bottom: 1px solid $borderColor;
 
@@ -412,7 +413,7 @@ header {
                 }
 
                 .all-menu-wrap {
-                    min-height: calc(100vh - 51px);
+                    height: calc(100vh - 51px);
                     top:51px;
                     right:-100vw;
                 }
