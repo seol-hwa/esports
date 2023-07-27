@@ -217,7 +217,7 @@ header .h-top-container .all-menu-wrap {
   right: 0;
   background: #fff;
   width: 100%;
-  height: calc(100vh - 61px);
+  min-height: calc(100vh - 61px);
   padding: 0px 30px;
   box-sizing: border-box;
   overflow-y: auto;
@@ -425,7 +425,7 @@ header .h-bottom-container .inner .search-box .search-btn .bx-search {
   }
   body header .h-top-container .all-menu-wrap,
   html header .h-top-container .all-menu-wrap {
-    height: calc(100vh - 51px);
+    min-height: calc(100vh - 51px);
     top: 51px;
     right: -100vw;
   }
