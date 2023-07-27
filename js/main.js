@@ -18,7 +18,6 @@ function skip() {
         var add = $(this.hash).offset().top-200;
 
         $('body,html').stop().animate({ scrollTop: add }, 500);
-        console.log(add);
     })
 }
 function lang() {
@@ -51,17 +50,6 @@ function mobMenu() {
 
     menu.each(function () {
         $(this).data('opCheck', false);
-    })
-
-    menuCon.css({ top: $('header').outerHeight(), height: $(window).innerHeight() - $('header').outerHeight(), right: -$('header').outerWidth() });
-
-    $(window).on('resize', function () {
-        menuCon.css({ top: $('header').outerHeight(), height: $(window).innerHeight() - $('header').outerHeight() });
-        if (isOpen == true) {
-            menuCon.css({ right: 0 });
-        } else {
-            menuCon.css({ right: -$('header').outerWidth() });
-        }
     })
 
     open.on('click', function () {

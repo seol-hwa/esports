@@ -98,7 +98,7 @@ header {
 
                         .bx-menu {
                             font-size: 30px;
-                            color:$titleColor;
+                            color: $titleColor;
                         }
                     }
 
@@ -111,7 +111,7 @@ header {
 
                         .bx-x {
                             font-size: 30px;
-                            color:$titleColor;
+                            color: $titleColor;
                         }
                     }
                 }
@@ -122,10 +122,11 @@ header {
         .all-menu-wrap {
             display: none;
             position: absolute;
-            top: 0;
+            top: 61px;
             right: 0;
             background: $backgroundColor;
             width: 100%;
+            height: calc(100vh - 61px);
             padding: 0px 30px;
             box-sizing: border-box;
             overflow-y: auto;
@@ -408,6 +409,12 @@ header {
                         }
                     }
 
+                }
+
+                .all-menu-wrap {
+                    height: calc(100vh - 51px);
+                    top:51px;
+                    right:-100vw;
                 }
             }
         }

@@ -212,10 +212,11 @@ header .h-top-container .inner .h-top-right .btn-wrap .all-menu-close .bx-x {
 header .h-top-container .all-menu-wrap {
   display: none;
   position: absolute;
-  top: 0;
+  top: 61px;
   right: 0;
   background: #fff;
   width: 100%;
+  height: calc(100vh - 61px);
   padding: 0px 30px;
   box-sizing: border-box;
   overflow-y: auto;
@@ -420,6 +421,12 @@ header .h-bottom-container .inner .search-box .search-btn .bx-search {
   html header .h-top-container .inner .logo a {
     font-size: 20px;
     gap: 5px;
+  }
+  body header .h-top-container .all-menu-wrap,
+  html header .h-top-container .all-menu-wrap {
+    height: calc(100vh - 51px);
+    top: 51px;
+    right: -100vw;
   }
 }
 footer {
@@ -1735,10 +1742,15 @@ aside .top-btn:hover .text {
   body main .team-container .inner .league-box,
   html main .team-container .inner .league-box {
     flex-wrap: wrap;
+    justify-content: center;
   }
   body main .team-container .inner .league-box li a,
   html main .team-container .inner .league-box li a {
     font-size: 14px;
+  }
+  body main .team-container .inner .team-box li ul,
+  html main .team-container .inner .team-box li ul {
+    justify-content: center;
   }
   body main .team-container .inner .team-box li ul li,
   html main .team-container .inner .team-box li ul li {

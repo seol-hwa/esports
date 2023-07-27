@@ -1307,6 +1307,7 @@
 
                     .league-box {
                         flex-wrap: wrap;
+                        justify-content: center;
 
                         li {
                             a {
@@ -1318,6 +1319,7 @@
                     .team-box {
                         li {
                             ul {
+                                justify-content: center;
                                 li {
                                     width: 110px;
 
