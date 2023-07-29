@@ -214,7 +214,7 @@ header .h-top-container .all-menu-wrap {
   display: none;
   position: absolute;
   top: 61px;
-  right: 0;
+  right: -100vw;
   background: #fff;
   width: 100%;
   height: calc(100vh - 61px);

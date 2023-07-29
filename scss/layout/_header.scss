@@ -123,7 +123,7 @@ header {
             display: none;
             position: absolute;
             top: 61px;
-            right: 0;
+            right: -100vw;
             background: $backgroundColor;
             width: 100%;
             height: calc(100vh - 61px);
